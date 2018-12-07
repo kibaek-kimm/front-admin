@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<link rel="stylesheet" href="/css/libs/bootstrap/bootstrap-4.1.0.min.css">
+<link rel="stylesheet" href="/css/libs/bootstrap/bootstrap-table-1.12.1.min.css">
+<link rel="stylesheet" href="/css/custom-bootstrap.css">
+
+<script type="text/javascript" src="/js/libs/jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/js/libs/bootstrap/bootstrap-4.1.0.min.js"></script>
+<script type="text/javascript" src="/js/libs/bootstrap/bootstrap-table-1.12.1.min.js"></script>
+<script>
+    (function() {
+        var generateTime = time => {
+            return time < 10 ? '0' + time : time;
+        };
+        
+        Date.prototype.generateDate = function(){
+            return this.getFullYear() + '. ' + generateTime(this.getMonth() + 1) + '. ' + generateTime(this.getDate()) + ' ' + generateTime(this.getHours()) + ':' + generateTime(this.getMinutes()) + ':' + generateTime(this.getSeconds());
+        };
+    })();
+    
+</script>

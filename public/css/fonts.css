@@ -1,0 +1,36 @@
+@font-face {
+      font-family: "peoplefont";
+      font-style: lighter;
+      font-weight: light;
+      src: url("/fonts/peoplefont/peoplefontl.eot");
+      src: url("/fonts/peoplefont/peoplefontl.eot?#iefix") format('embedded-opentype'), url("/fonts/peoplefont/peoplefontl.woff") format('woff'), url("/fonts/peoplefont/peoplefontl.ttf") format('truetype');
+}
+
+@font-face {
+      font-family: "peoplefont";
+      font-style: normal;
+      font-weight: bold;
+      src: url("/fonts/peoplefont/peoplefontb.eot");
+      src: url("/fonts/peoplefont/peoplefontb.eot?#iefix") format('embedded-opentype'), url("/fonts/peoplefont/peoplefontb.woff") format('woff'), url("/fonts/peoplefont/peoplefontb.ttf") format('truetype');
+}
+
+@font-face {
+      font-family: "YoonGothicPro";
+      font-style: normal;
+      font-weight: light;
+      src: url("/fonts/YoonGothicPro/YoonGothicPro715.woff") format('woff'), url("/fonts/YoonGothicPro/YoonGothicPro715.ttf") format('truetype');
+}
+
+@font-face {
+      font-family: "YoonGothicPro";
+      font-style: normal;
+      font-weight: normal;
+      src: url("/fonts/YoonGothicPro/YoonGothicPro755.woff") format('woff'), url("/fonts/YoonGothicPro/YoonGothicPro755.ttf") format('truetype');
+}
+
+@font-face {
+      font-family: "YoonGothicPro";
+      font-style: normal;
+      font-weight: bold;
+      src: url("/fonts/YoonGothicPro/YoonGothicPro775.woff.woff") format('woff'), url("/fonts/YoonGothicPro/YoonGothicPro775.woff.ttf") format('truetype');
+}

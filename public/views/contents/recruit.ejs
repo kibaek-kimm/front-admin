@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <% include ./../inc/meta %>
+        <title><%= metaTitle %></title>
+    </head>
+    <body>
+        <div class="wrapper">
+             <% include ./../inc/sidebar %>
+
+             <div id="content">
+                <h2><%= title %></h2>
+             </div>
+        </div>
+
+        <!-- <script type="text/javascript">
+            var button = document.getElementById('test');
+
+            button.addEventListener('click', function() {
+                $.ajax({
+                    url: '/api/getJson?filepath=/testfile/notice-list.json',
+                    method: 'GET',
+                    success: function(_response) {
+                        console.log('success');
+                        console.log(_response);
+                    },
+                    error: function(_err) {
+                        console.log('err');
+                        console.log(_err);
+                    }
+                });
+            });
+            
+        </script> -->
+
+    </body>
+</html>
+

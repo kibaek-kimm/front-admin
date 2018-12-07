@@ -1,0 +1,1912 @@
+{
+    "status": "success",
+    "message": "success",
+    "lastId": 52,
+    "data": {
+        "list": [
+            {
+                "type": "noti",
+                "id": 39,
+                "date": "2018-02-27",
+                "title": "개인투자자 투자한도 변경 안내",
+                "contents": "<p><strong>TEST</strong></p>",
+                "modified_datetime": "2018-10-17 18:41:28"
+            },
+            {
+                "type": "noti",
+                "id": 9,
+                "date": "2017-04-26",
+                "title": "개인투자자(소득적격) 등록 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "2017년 05월 29일부터 금융위원회의 \"P2P 가이드라인\" 시행에 따라 투자 한도가 적용됩니다. 다만, \"이자, 배당소득이 2천만원 초과\" 또는 \"사업소득, 근로소득이 1억원을 초과\"하는 개인투자자는 연간 4천만원까지 투자가 가능합니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "이에 해당하는 고객님께서는 전년도 기준 <strong>\"종합소득 과세표준 확정신고 및 납부계산서\"</strong>와 <strong>\"접수증\"</strong>을 발급 받으신 후, 피플펀드(cs@peoplefund.co.kr)로 보내주시기 바랍니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "단, 근로소득자의 경우, 전년도 기준  <strong>\"근로소득원천징수영수증(발행회사 직인날인 필수)\"</strong>만 제출하시면 가능합니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "종합소득세 신고는 아래 3가지 방법을 통해 가능하며, \"국세청 홈택스 홈페이지 전자신고\"를 이용하시면 가장 쉽고 간편하게 증빙 서류 작성이 가능합니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "&nbsp;- 주소지 관할 세무서 직접 신고<br />&nbsp;- 국세청 홈택스 홈페이지 전자 신고<br />&nbsp;- 전문 세무대리인 대리 신고<br /><br /><br />"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong>국세청 홈택스 홈페이지 전자신고 방법</strong>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>STEP1. 국세청 홈택스 홈페이지 접속 후 로그인</strong><br />&nbsp;▷ 국세청 홈페이지 바로가기 : <a href=\"https://www.hometax.go.kr\" target=\"_blank\">https://www.hometax.go.kr</a><br />"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>STEP2. 신고/납부 클릭</strong>"
+                    },
+                    {
+                        "type": "img",
+                        "width": "619px",
+                        "width_m": "309.5px",
+                        "src": "/files/images/img_notice_hometax_01.png",
+                        "src_2x": "/files/images/img_notice_hometax_01@2x.png",
+                        "src_m": "/files/images/img_notice_hometax_01.png",
+                        "src_m_2x": "/files/images/img_notice_hometax_01@2x.png"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>STEP3. 종합소득세 클릭</strong>"
+                    },
+                    {
+                        "type": "img",
+                        "width": "619px",
+                        "width_m": "309.5px",
+                        "src": "/files/images/img_notice_hometax_02.png",
+                        "src_2x": "/files/images/img_notice_hometax_02@2x.png",
+                        "src_m": "/files/images/img_notice_hometax_02.png",
+                        "src_m_2x": "/files/images/img_notice_hometax_02@2x.png"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>STEP4. 본인의 소득 유형에 맞는 소득 신고서 작성하기</strong>"
+                    },
+                    {
+                        "type": "img",
+                        "width": "619px",
+                        "width_m": "309.5px",
+                        "src": "/files/images/img_notice_hometax_03.png",
+                        "src_2x": "/files/images/img_notice_hometax_03@2x.png",
+                        "src_m": "/files/images/img_notice_hometax_03.png",
+                        "src_m_2x": "/files/images/img_notice_hometax_03@2x.png"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>STEP5. 납부 세액 작성 후, 신고서 제출 및 납부 완료하기</strong>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>STEP6. \"신고내역\"을 클릭하신 후, \"접수번호\"와 \"접수증\" 모두 일괄 출력하기</strong>"
+                    },
+                    {
+                        "type": "img",
+                        "width": "618px",
+                        "width_m": "309px",
+                        "src": "/files/images/img_notice_hometax_04.png",
+                        "src_2x": "/files/images/img_notice_hometax_04@2x.png",
+                        "src_m": "/files/images/img_notice_hometax_04.png",
+                        "src_m_2x": "/files/images/img_notice_hometax_04@2x.png"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>STEP7. 해당 서류 저장 혹은 인쇄 후 아래 피플펀드 이메일로 전송</strong><br /><br />메일 제목 : <strong>[소득증빙서류제출]회원ID/성명</strong><br />메일 주소 : <strong><a href=\"mailto:cs@peoplefund.co.kr\">cs@peoplefund.co.kr</a></strong><br />"
+                    },
+                    {
+                        "type": "p",
+                        "text": "관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "noti",
+                "id": 21,
+                "date": "2017-08-22",
+                "title": "전문투자자 등록 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "2017년 05월 29일부터 금융위원회의 \"P2P 가이드라인\" 시행에 따라 투자 한도가 적용됩니다. 다만, \"전문투자자\" 로 등록된 투자고객은 한도 제한 없이 투자하실 수 있습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>STEP1. 전문투자자 요건 확인</strong><br />아래 세 가지 요건을 모두 충족하시면 전문투자자 등록이 가능합니다.<br />"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>금융투자업자에게 계좌개설 1년 경과</li>",
+                            "<li>금융투자상품 잔고 5억원 이상</li>",
+                            "<li>소득액 1억원 또는 재산가액 10억원 이상</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>STEP2. 금융투자협회의 전문투자자확인증 발급</strong><br />전문투자자 요건을 충족하신다면, 금융투자협회에 전문투자자로 등록하여 전문투자자확인증을 발급받을 수 있습니다.<br />&nbsp;▷ 금융투자협회 문의하기 : <a href=\"tel:02-2003-9392\">02-2003-9392</a><br />"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>STEP3. 피플펀드로 전문투자자확인증 제출</strong><br />발급받으신 전문투자자확인증을 아래와 같이 피플펀드 이메일로 전송해주시면 피플펀드에서도 전문투자자로 등록되어 한도 제한 없이 투자하실 수 있습니다.<br />"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>메일 제목 : <strong>[전문투자자증빙서류제출]회원ID/성명</strong></li>",
+                            "<li>메일 주소 : <a href=\"mailto:cs@peoplefund.co.kr\">cs@peoplefund.co.kr</a></li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br />관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "noti",
+                "id": 32,
+                "date": "2018-01-03",
+                "title": "2017 ANNUAL REPORT",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "지난 한 해의 성과와 현황을 투명하게 공개하고 2018년의 방향성을 공유하기 위하여 2017년 애뉴얼리포트를 발간하였습니다. 대표이사를 비롯한 경영진이 심혈을 기울여 작성한 애뉴얼리포트를 아래 링크를 통해 확인 부탁드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<a href=\"/report/2017/annual/\" class=\"blue-1\"><img src=\"/assets/img/report/2017/banner_annual_2017_m@2x.png\" style=\"width:320px\" /></a><br />"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><br /><strong>애뉴얼리포트 개요</strong><br />"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>1. 2017년 개괄</strong><br />"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>투자 개괄 : 대한민국 P2P산업 역사상 가장 빠른 성장</li>",
+                            "<li>지분투자 유치 : 국내외 벤처캐피탈 및 핀테크투자사에서 누적 64억원 투자유치</li>",
+                            "<li>금융기관 협업 : NH투자증권과 국내 최초 DLS증권 발행 및 다수 기관과 협업</li>",
+                            "<li>리스크 관리 : 연체관리 프로세스 및 추심역량 강화</li>",
+                            "<li>고객중심 철학 : 최우선 과제, 투자고객의 안전한 자산관리</li>",
+                            "<li>기술금융 구현 : 진정한 ‘금융 테크놀로지’ 구현</li>",
+                            "<li>2018년 비전 : 대한민국 최고의 대체투자 플랫폼으로의 성장</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>2. 리스크 관리 : 피플펀드의 리스크 관리 방향성</strong><br />"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>전문인력 충원 현황 : 32명의 금융전문가 및 기술인력 증원을 통한 전문성 강화</li>",
+                            "<li>심사 프로세스 정비 : 리스크커미티 도입 및 미들오피스 구축</li>",
+                            "<li>연체관리 및 추심 강화 : 9건의 상환지연 채권 중 6건 정상상환</li>",
+                            "<li>2018년 리스크관리 방향성 : 명확한 출구 전략 수립</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>3. 채권현황 : 피플펀드 발행 채권 분포 현황</strong><br />"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>상환 현황 및 지급이자 총액</li>",
+                            "<li>개인/담보채권 개괄</li>",
+                            "<li>담보채권 개별 상태 현황</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br />아직 부족한 부분이 많지만 여기까지 올 수 있었던 건 투자자 여러분의 믿음과 도움 덕분임을 새삼 깨닫고 머리 숙여 감사드립니다. 2018년에는 더욱 정진하도록 하겠습니다.<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "noti",
+                "id": 40,
+                "date": "2018-05-09",
+                "title": "“[추천 이벤트] “불러소득 시즌3” - 10,000P x 2",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "안녕하세요, 피플펀드입니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "피플펀드 추천 이벤트 “불러소득”이 새로운 모습으로 돌아왔습니다. 피플펀드를 추천하고 추천받은 모든 분들께 <strong>피플펀드 투자에 바로 사용할 수 있는 10,000P</strong>를 드립니다"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>이벤트 참여방법</strong>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong>1. 기존 회원 : 추천하고 10,000P 받기</strong>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong style=\"color:#0A7EC6;\">추천링크/추천코드 공유하기 > 피추천인 투자완료 시 10,000P 지급</strong>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br/><span style=\"display:block; padding-left:15px;\">1. 추천링크/추천코드는 마이페이지 > 불러소득 시즌3에서 확인하실 수 있습니다.<br/>2. 추천받은 사람이 투자한 상품의 모집이 완료되면 10,000P가 자동 지급됩니다.<br/>3. 지급된 포인트는 지급일부터 1년 동안 피플펀드 투자에 사용하실 수 있습니다.</span>"
+                    },
+                    {
+                        "type": "img",
+                        "width": "735px",
+                        "width_m": "360px",
+                        "src": "/files/images/img_notice_20180706_1.png?v=1",
+                        "src_2x": "/files/images/img_notice_20180706_1@2x.png?v=1",
+                        "src_m": "/files/images/img_notice_20180706_1.png?v=1",
+                        "src_m_2x": "/files/images/img_notice_20180706_1@2x.png?v=1"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br/><br/><strong>2. 신규 회원 : 추천받고 10,000P 받기</strong>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong style=\"color:#0A7EC6;\">추천링크/추천코드로 가입하기 > 가입 즉시 10,000P 지급</strong>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<span style=\"display:block; padding-left:15px;\">1. 추천링크를 통해 가입하거나, 별도 가입 시 추천코드를 입력하면 추천인과 매칭됩니다.<br/>2. 가입 즉시 10,000P가 자동 지급되고, 피플펀드 투자에 바로 사용하실 수 있습니다.<br/>3. 지급된 포인트는 지급일부터 30일 동안 피플펀드 투자에 사용하실 수 있습니다.</span>"
+                    },
+                    {
+                        "type": "img",
+                        "width": "735px",
+                        "width_m": "360px",
+                        "src": "/files/images/img_notice_20180706_2.png?v=2",
+                        "src_2x": "/files/images/img_notice_20180706_2@2x.png?v=2",
+                        "src_m": "/files/images/img_notice_20180706_2.png?v=2",
+                        "src_m_2x": "/files/images/img_notice_20180706_2@2x.png?v=2"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><br /><strong>유의사항</strong>"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>추천링크/추천코드를 사용하면 추천인과 매칭됩니다.</li>",
+                            "<li>부정확한 추천코드를 입력하면, 추천인과 매칭되지 않습니다.</li>",
+                            "<li>피추천인이 투자한 상품의 모집 완료 후 포인트가 지급됩니다.</li>",
+                            "<li>사용가능 포인트는 마이페이지 > 포인트현황에서 확인할 수 있습니다.</li>",
+                            "<li>본 이벤트로 지급된 포인트는 일정기간 (추천인 1년, 피추천인 30일) 후 소멸됩니다.</li>",
+                            "<li>투자 후, 중도 취소할 경우 포인트가 지급/반환되지 않습니다.</li>",
+                            "<li>추천링크/추천코드는 마이페이지 > 불러소득 시즌3에서 확인할 수 있습니다.</li>",
+                            "<li>투자이력이 없는 경우에는 추천링크/추천코드가 발급되지 않습니다.</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 53,
+                "date": "2018-10-01",
+                "title": "피플후기 이벤트",
+                "contents": [
+                    {
+                        "type": "img",
+                        "width": "100%",
+                        "width_m": "100%",
+                        "src": "/files/images/img_notice_reviewevent.png?1",
+                        "src_2x": "/files/images/img_notice_reviewevent.png?1",
+                        "src_m": "/files/images/img_notice_reviewevent.png?1",
+                        "src_m_2x": "/files/images/img_notice_reviewevent.png?1"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<a href=\"http://bit.ly/2NO7YNK\" class=\"pf-view-\" target=\"_blank\" style=\"display: block;height: 0;width: 33.5%;text-indent: -9999px;position: absolute;top: 77.4%;left: 31%;padding-top: 9%;\">지금 바로 참여하기</a>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<a href=\"https://static.peoplefund.co.kr/files/agreement/promotion.pdf\" class=\"pf-view-\"  target=\"_blank\"  style=\"display: block;height: 0;width: 57%;text-indent: -9999px;position: absolute;bottom: 2.5%;left: 32%;padding-top: 8%;\">약관</a>"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 52,
+                "date": "2018-09-20",
+                "title": "[피플펀드] 추석 연휴 휴무 및 상환 일정 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "피플펀드를 이용해 주시는 고객님들께 감사인사를 전하며, 풍요롭고 따뜻한 한가위 되시길 기원합니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "추석 연휴 휴무 및 상환 일정을 다음과 같이 안내해 드리오니 서비스 이용에 참고하시기 바랍니다."
+                    },
+                    {
+                        "type": "table",
+                        "text": "<thead> <tr> <th colspan=\"2\"><strong>추석 휴무 및 상환 일정</strong></th> </tr></thead><tbody> <tr> <th><strong>휴무기간</strong></th> <td>추석 명절로 인한 공휴일 (2018.09.22 - 2018.09.26)</td></tr><tr> <th><strong>이용 불가 서비스</strong></th> <td>대출 심사, 유선 및 온라인 상담 </td></tr><tr> <th><strong>정상 진행 서비스</strong></th> <td>대출조건 조회, 예치금 입출금, 채권 투자</td></tr><tr> <th><strong>상환일정</strong></th> <td> <p>연휴기간 내 상환 채권은 민법 제 161조 ‘공휴일 등과 기간의 만료점’에 의거하여 아래와 같이 진행 될 예정입니다.</p><ul style=\"margin-bottom:15px\"> <li><strong>1) 차주 상환일 9월 21일(금) 채권</strong><br/>- 차주 상환: 9월 21일(금), 투자자 정산: 9월 27일(목)</li></ul> <ul style=\"margin-bottom:10px;\"> <li><strong>2) 차주 상환일 9월 22일(토) - 9월 26일(수) 채권</strong><br/>- 차주 상환: 9월 27일(목), 투자자 정산: 9월 28(금)</li><li><small style=\"padding-left:6px;\">*단, 투자자 정산은 차주 상환일로부터 최대 2영업일이 소요될 수 있습니다. (근거: 원리금수취권 투자자 이용약관 5조 3항)</small></li></ul> </td></tr></tbody> "
+                    },
+                    {
+                        "type": "p",
+                        "text": "휴무 기간 동안 유선 및 온라인 상담이 어려우며, 9월 27일(목) 부터 모든 업무가 정상적으로 운영됩니다.<br/>문의사항은 피플펀드 고객경험팀(02-6212-0700)으로 연락주시기 바랍니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 51,
+                "date": "2018-08-03",
+                "title": "[당첨자 발표] 8월 피플후기 이벤트",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "지난 8월 23일부터 31일까지 진행된 <strong>‘8월 피플후기 이벤트’</strong> 에 참여해주신 모든 분들께 진심으로 감사드립니다. <br/>당첨자와 리워드 지급은 아래와 같습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong style=\"color:#0A7EC6;\">당첨자</strong><br />"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong>1등 (100,000포인트)</strong>"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>신*한 (010-****-0887)</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong>2등 (50,000포인트)</strong>"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>문*진 (010-****-1877)</li>",
+                            "<li>백*민 (010-****-2852)</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong>참여자 전원 (3,000포인트)</strong>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "*당첨자분들께 개별 연락드리겠습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><br /><strong style=\"color:#0A7EC6;\">리워드 지급</strong><br />"
+                    },
+                    {
+                        "type": "p",
+                        "text": "지급일: 2018년 9월 7일 (금)"
+                    },
+                    {
+                        "type": "p",
+                        "text": "참여해주신 모든 분들께 다시 한 번 감사드립니다. 앞으로 더 좋은 투자상품과 즐거운 이벤트로 찾아 뵙겠습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 50,
+                "date": "2018-08-23",
+                "title": "[마감] 8월 피플후기 이벤트",
+                "contents": [
+                    {
+                        "type": "img",
+                        "width": "720px",
+                        "width_m": "100%",
+                        "src": "/files/images/img_notice_reviewevent1808.png?18",
+                        "src_2x": "/files/images/img_notice_reviewevent1808.png?18",
+                        "src_m": "/files/images/img_notice_reviewevent1808_m.png?18",
+                        "src_m_2x": "/files/images/img_notice_reviewevent1808_m.png?18"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<a href=\"http://bit.ly/2MnikEo\" class=\"pf-view-\" target=\"_blank\" style=\"display: block;height: 0;width: 36.5%;text-indent: -9999px;position: absolute;    top: 80.1%;left: 31%; padding-top: 14%;\">지금 바로 참여하기</a>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<a href=\"https://static.peoplefund.co.kr/files/agreement/promotion.pdf\" class=\"pf-view-\"  target=\"_blank\"  style=\"     display: block;height: 0;width: 61%;text-indent: -9999px; position: absolute;bottom: 0.5%;left: 32%;padding-top: 11%;\">약관</a>"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 49,
+                "date": "2018-08-03",
+                "title": "[당첨자 발표] 7월 피플후기 이벤트",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "지난 7월 12일부터 31일까지 진행된 <strong>‘7월 피플후기 이벤트’</strong> 에 참여해주신 모든 분들께 진심으로 감사드립니다. 당첨자와 리워드 지급은 아래와 같습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong style=\"color:#0A7EC6;\">당첨자</strong><br />"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong>1등 (100,000포인트)</strong>"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>장*영 (010-****-4679)</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong>2등 (50,000포인트)</strong>"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>서*호 (010-****-5242)</li>",
+                            "<li>윤*규 (010-****-9268)</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong>참여자 전원 (3,000포인트)</strong>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "*당첨자분들께 개별 연락드리겠습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><br /><strong style=\"color:#0A7EC6;\">리워드 지급</strong><br />"
+                    },
+                    {
+                        "type": "p",
+                        "text": "지급일: 2018년 8월 8일 (수)"
+                    },
+                    {
+                        "type": "p",
+                        "text": "참여해주신 모든 분들께 다시 한 번 감사드립니다. 앞으로 더 좋은 투자상품과 즐거운 이벤트로 찾아 뵙겠습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 48,
+                "date": "2018-07-11",
+                "title": "[마감] 7월 피플후기 이벤트",
+                "contents": [
+                    {
+                        "type": "img",
+                        "width": "720px",
+                        "width_m": "100%",
+                        "src": "/files/images/img_notice_20180711_reviewevent1807.png?17",
+                        "src_2x": "/files/images/img_notice_20180711_reviewevent1807.png?17",
+                        "src_m": "/files/images/img_notice_20180711_reviewevent1807_m.png?17",
+                        "src_m_2x": "/files/images/img_notice_20180711_reviewevent1807_m.png?17"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<a href=\"http://bit.ly/2m6SLHZ\" class=\"pf-view-w\"  target=\"_blank\" style=\" display: block; height: 57px; width: 260px; text-indent: -9999px; position: absolute; top: 77.5%; left: 34%;\">지금 바로 참여하기</a>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<a href=\"https://static.peoplefund.co.kr/files/agreement/promotion.pdf\" class=\"pf-view-w\"  target=\"_blank\"  style=\" display: block; height: 62px; width: 300px; text-indent: -9999px; position: absolute; bottom: 1.5%; left: 33%;\">약관</a>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<a href=\"http://bit.ly/2m6SLHZ\" class=\"pf-view-m\" target=\"_blank\" style=\"display: block;height: 0;width: 36.5%;text-indent: -9999px;position: absolute;top: 67%;left: 31%; padding-top: 14%;\">지금 바로 참여하기</a>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<a href=\"https://static.peoplefund.co.kr/files/agreement/promotion.pdf\" class=\"pf-view-m\"  target=\"_blank\"  style=\"     display: block;height: 0;width: 61%;text-indent: -9999px; position: absolute;bottom: 4.5%;left: 17%;padding-top: 11%;\">약관</a>"
+                    }
+                ]
+            },
+            {
+                "type": "noti",
+                "id": 47,
+                "date": "2018-07-10",
+                "title": "공시지표 변경안내",
+                "contents": "<h1>공시지표 변경</h1>\n<p>ㅋㅋㅋ</p>",
+                "modified_datetime": "2018-10-17 16:09:40"
+            },
+            {
+                "type": "normal",
+                "id": 46,
+                "date": "2018-06-18",
+                "title": "P2P대출 관련 관계기관 합동 점검회의 논의 결과 안내 ",
+                "contents": [
+                    {
+                        "type": "img",
+                        "width": "735px",
+                        "width_m": "360px",
+                        "src": "/files/images/img_notice_20180618.png?v=14",
+                        "src_2x": "/files/images/img_notice_20180618.png?v=14",
+                        "src_m": "/files/images/m_img_notice_20180618.png?v=14",
+                        "src_m_2x": "/files/images/m_img_notice_20180618.png?v=14"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br/>안녕하세요, 피플펀드입니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "지난 6월 14일, 금융당국 및 검찰, 경찰은 합동 점검회의를 개최하여, P2P대출시장의 현황을 점검하고 대응방향을 논의하였습니다. 금융위원회 부위원장, 금융감독원 부원장, 법무부, 경찰청 등이 참석한 본 회의의 결과와 금융위원회 보도자료 전문을 안내 드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "P2P대출 관련 관계기관 합동회의에서는 시장의 급속한 성장과 함께  일부 업체의 도산, 사기, 횡령 등 사고가 발생하며 이용자 보호 우려가 커지고 있는 상황임을 인지하고, P2P대출시장의 건전한 성장을 위한 방향성에 대한 공감대를 형성하였습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "주요 내용으로는 <strong>1) 명백한 불법 행위에 대한 수사 및 업중한 처벌을 통한 신뢰기반 마련, 2) 불건전 영업행위에 대해 가이드라인을 통한 규율, 3) 입법을 통해 규율의 강제성 확보 및 금융감독 대상으로 포함</strong>의 방향성이 명시되었습니다. 각 항목별 구체적 내용은 아래와 같습니다. "
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br/><strong>불법행위 근절을 위한 P2P 대출 점검, 모니터링 강화</strong>"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>금감원의 실태조사 조기 진행 및 불법행위 의심업체에 대한 신속한 현장검사 실시</li>",
+                            "<li>이용자 피해 최소화를 위해 검찰, 경찰과 긴밀한 공조 체제 유지</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong>불건전 영업행위 방지를 위해 가이드라인 개정 및 투자자 안내 강화</strong>"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>투자자보호 장치 강화를 위한 가이드라인 개정</li>",
+                            "<li>업계 자정노력 유도, 가이드라인 준수 여부 및 투자자 안내 강화</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong>P2P대출 법적 근거 마련 (입법)</strong>"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>P2P대출에 대한 명확한 감독권 확보</li>",
+                            "<li>P2P대출을 대표적 핀테크 산업으로 건전하게 육성</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br/>특히 본 회의를 통해 아래와 같이 7가지의 투자자 유의 사항이 공시되었으니, 투자시 유념하여 주시기 바랍니다. "
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br/><strong style=\"color:#0A7EC6; font-size:15px;\">투자자 유의사항</strong>"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>P2P대출은 원금보장 상품이 아닌 손실 가능성이 있는 상품입니다.</li>",
+                            "<li>대출금리가 높을수록 차입자의 리스크가 크며, 원리금 상환 불이행 가능성이 증가합니다.</li>",
+                            "<li>P2P업체는 제도권 금융이 아니며, 금융당국의 감독대상이 아닙니다. (단, 연계대부업자는 감독대상으로, 금융위원회 등록여부를 확인 가능)</li>",
+                            "<li>리스크 분산을 위해 P2P업체, 대출상품별 분산투자가 중요합니다.</li>",
+                            "<li>과도한 투자이벤트 실시 업체는 각별히 유의할 필요가 있습니다.</li>",
+                            "<li>P2P업체를 선정시에는 인터넷 카페 등을 통해 P2P업체 평판 정보를 확인할 필요가 있습니다.</li>",
+                            "<li>부동산PF 대출상품에 투자하는 경우 특히 유의하시기 바랍니다.</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br/>피플펀드는 금융위원회 등록 사단법인인 (사)한국핀테크산업협회의 회장사이자 한국P2P금융협회의 임원사로서, 투자자 보호 및 산업에 대한 사회적 신뢰 회복을 위한 금융당국의 노력에 적극 협조해나갈 것을 약속 드립니다. 특히 가이드라인 개정과 법제화 진행, 한국P2P금융협회의 자율규제 노력 등에 앞장서며 업권의 건전한 성장을 위해 최선을 다하겠습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "감사합니다.<br />피플펀드 드림"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<a href=\"https://static.peoplefund.co.kr/files/20180614/180614_broadcast_reference_for_p2p_finance.pdf\" target=\"_blank\" >첨부: p2p대출 관련 관계기관 합동 점검회의 논의결과 전문</a>"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 45,
+                "date": "2018-06-15",
+                "title": "[당첨자 발표] 무임승차 이벤트",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "안녕하세요, 피플펀드입니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "지난 5월, 피플펀드 누적투자 2천억원 달성기념으로 진행한 <strong>‘무임승차’</strong> 이벤트 행운의 주인공은 무려 가족 네 분이 함께 이벤트에 참여해주신 <strong>김*규</strong>(010-****-3422) 님입니다. 참여해주신 모든 분들께 다시 한 번 진심으로 감사드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br/>감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 44,
+                "date": "2018-06-14",
+                "title": "피플펀드 이용약관 개정 안내",
+                "contents": "<ul>\n<li>리스트 테스트</li>\n<li>이게 되남??</li>\n<li>드래그해서 하는거</li>\n<li>오호~~</li>\n</ul>",
+                "modified_datetime": "2018-10-17 16:09:18"
+            },
+            {
+                "type": "normal",
+                "id": 43,
+                "date": "2018-06-04",
+                "title": "P2P금융산업의 최근 사건사고에 대한 공지사항",
+                "contents": [
+                    {
+                        "type": "img",
+                        "width": "735px",
+                        "width_m": "360px",
+                        "src": "/files/images/img_notice_20180601.png?v=1",
+                        "src_2x": "/files/images/img_notice_20180601@2x.png?v=1",
+                        "src_m": "/files/images/m_img_notice_20180601.png?v=1",
+                        "src_m_2x": "/files/images/m_img_notice_20180601@2x.png?v=1"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br/>안녕하세요, 피플펀드입니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "최근 언론에 보도된 바 있는 소수 P2P금융업체의 부도 및 불법적인 행위 등으로 인하여 P2P금융 시장에 대한 우려의 목소리가 있습니다. 이에 현재의 이슈들과 최근 진행된 금융감독원 실태조사 결과를 소상히 설명 드리고, 이에 대한 피플펀드의 입장을 말씀 드리고자 합니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><br /><strong>최근 P2P금융산업 이슈 및 동향</strong><br />"
+                    },
+                    {
+                        "type": "p",
+                        "text": "최근 온라인 커뮤니티를 중심으로 활동하는 P2P금융업체들 중 대표가 투자자의 자금을 횡령하고 해외로 도피하는 사례가 두 건 있었으며, 한 업체는 급작스럽게 회사 부도를 선언하고 잠적하였습니다. 이로 인해 많은 피해자가 발생하였으며 법적인 절차들도 진행 중입니다. 언론에서도 이와 같은 피해 사례를 크게 조명하며, P2P투자의 안정성에 대한 사회적 시선이 집중되고 있습니다.<br/><br />또 한 편으로, P2P금융 업계 내에서 협회를 중심으로 한 의견 차이가 표면화 된 바 있습니다. 렌딧, 에잇퍼센트, 팝펀딩 등 3개 업체가 한국P2P금융협회를 탈퇴하고 ‘P2P금융 자율규제 강화에 대한 공동성명서’를 발표하며 별도의 협회를 설립하겠다는 입장을 밝혔습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>금융감독원 실태조사 결과 및 투자자 유의사항</strong><br />"
+                    },
+                    {
+                        "type": "p",
+                        "text": "지난 5월 28일, 금융감독원은 [P2P 연계대부업자 실태조사 결과 및 투자자 유의사항]을 발표했습니다. 주요 내용으로 1) 심사인력 수 3.7명의 영세한 규모로 인해 사업 전 영역에 있어 취약점이 발견되며, 2) 이해관계자에 대한 특혜대출이나 투자금 유용과 같은 부당/허위 대출이나, 경품 과다제공, 허위공시 등의 불건전 영업행위가 상당하고, 3) 자금관리의 투명성이 부족하며 도산 및 폐업 시 상환금 배분 방법이 불투명한 점 등이 포함되었습니다.<br/><br />투자자 유의사항으로는 1) P2P 연계대부업자의 금융위 등록여부 확인, 2) P2P 대출 가이드라인 준수 여부 확인, 3) 심사능력 확인, 4) 업체 정보 확인, 5) 과도한 이벤트에 유의, 6) 정보관리 실태 확인, 7) 예치금 분리 보관 및 투자금 입금계좌 확인, 8) 고금리 상품에 대한 원금손실 가능성 유의, 9) PF사업의 만기연장 및 재모집 상품 주의, 10) 담보권 설정 여부 확인 등 10가지 사항이 제시되었습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>금융감독원 실태조사 주요 사안에 대한 피플펀드 현황 및 입장</strong><br />"
+                    },
+                    {
+                        "type": "p",
+                        "text": "피플펀드는 2016년 6월 서비스를 시작한 이후, 지난 2년간 투자자분들의 신뢰에 힘입어 꾸준히 성장해왔습니다. 특히 <strong>국내 최초이자 현재까지도 유일한 은행통합형 모델을 구축</strong>하는 등 투자자 보호를 사업 운영의 최우선 방향으로 하여 왔습니다. 금융위원회 등록 사단법인인 (사)한국핀테크산업협회의 회장사이자,  한국P2P금융협회의 임원사로서 <strong>법제화와 가이드라인 개정 등에 적극적으로 참여</strong>하며 산업의 건전한 발전을 위해서도 힘써왔습니다. 이에 현재 산업내의 제 이슈와 특히 금감원 실태조사와 관련하여 피플펀드를 믿고 함께해 주시는 모든 투자자분들께 금융감독원 실태조사 사항에 대해 피플펀드의 현황을 공유드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>1) 조직 구성 및 심사 역량</strong><br />"
+                    },
+                    {
+                        "type": "p",
+                        "text": "금융감독원 실태조사에서 가장 근본적인 원인으로 지목한 부분이 영세한 인력구성과 이로 인해 발생하는 사업 전 영역에서의 취약성입니다. P2P업체의 평균 인원은 약 10.5명, 심사 인력은 3.7명 으로 발표되었습니다. 특히 최근 문제가 된 업체들의 경우에도 소수의 인력이 사업의 전 영역을 담당하며, 따라서 대표가 개인의 판단으로 자금의 유용을 비롯한 불법적인 행위를 할 수 있는 구조적인 문제가 있었습니다.<br/><br/>피플펀드는 <strong>2018년 6월 4일 현재, 정규직 기준 총 67명의 임직원</strong>으로 구성되어 있습니다. 이 중 상품의 <strong>심사를 담당하는 사업부서 인력은 19명</strong>으로, 국내외 대표 금융사 출신의 최고의 전문성을 갖춘 인력들이 배치되어 있습니다. 피플펀드의 인력 현황은 <a href=\"https://www.peoplefund.co.kr/report/2017/annual?utm_source=invest&utm_medium=email&utm_campaign=speech&utm_content=hyper\" target=\"_blank\">연간보고서(Annual report)</a> 및 홈페이지를 통해서 언제든지 확인이 가능합니다.<br/>또한 사업 부서와 별도의 조직으로 법무팀과 미들오피스, 채권관리팀이 구성되어, 채권의 심사와 계약, 관리 전 과정에서 내부적인 견제 기능을 수행하고 있습니다. 특히 사내변호사 2명과 내부공인감사사(CIA) 자격을 보유한 전문인력 등으로 구성된 법무팀에서는, 내부통제규정을 제정하여 가이드라인 뿐 아니라 법률과 정보보안, 윤리강령 등에 대한 준수를 엄격하게 관리하고 있습니다. 이와 같이 피플펀드는 대표이사를 포함한 일부 개인의 비윤리적 판단에 의한 불법적인 행위를 구조적으로 불가능하게 만들기 위한 절차들을 마련, 강화해나가고 있습니다.<br/><br/>피플펀드 상품은 출시되기까지 세 번의 리스크위원회를 통해 심사됩니다. 각 단계에서는 사업인력 뿐 아니라 법무팀과 미들오피스, 채권관리팀을 포함한 모든 관련 담당자가 참석하며, 상품의 안정성을 포함하여 사후관리방안, 가이드라인 및 법규 준수 여부, 상품설명 심의 등의 제 측면을 검토하게 됩니다. 이러한 심사 절차로 특수관계인에 대한 특혜나 부당 대출 가능성을 차단하고 있습니다. "
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>2) 가이드라인 준수 및 자금관리</strong><br />"
+                    },
+                    {
+                        "type": "p",
+                        "text": "피플펀드는 금융감독원 등록 업체(P2P연계대부업: 2018-금감원-1359)로, 법제화 및 가이드라인 개정에도 적극 참여해 왔습니다. 한국P2P금융협회의 자율규제에 따른 가이드라인 준수 여부 실태조사 등을 통해 각 항목을 엄격히 준수하고 있음을 공시해왔을 뿐 아니라, 더 나아가 <strong>가이드라인에 의무화</strong>되지 않은 지표들까지 업계에서 가장 상세하고 투명하게 공개</strong>하고 있습니다. 홈페이지 및 투자자 마이페이지를 통해 투자 이력과 투자 채권 구성, 채권 현황 및 상환스케쥴, 입출금 내역 등 금융 서비스로서 투자자분들께 필요하다고 생각되는 모든 항목을 상세히 공개하고 있습니다.  <br/><br />투자자분들의 <strong>모든 자금은 피플펀드 계좌가 아닌 제휴 여신기관인 전북은행 계좌를 통해 관리</strong>됩니다. 각 투자자분들의 예치금 계좌는 은행 명의의 모계좌와 연결되어 투자자 개인에게 할당된 가상계좌이며, 대출실행 및 상환까지 전 과정이 전북은행의 계좌를 통해 안전하게 관리됩니다. 국내 최초이자 유일의 은행통합형 모델로 시작한 피플펀드는, 전북은행과의 투자금관리서비스를 통해 업계에서 가장 안전하게 투자자분들의 자금을 관리하고 있습니다. <strong>투자자 여러분의 모든 자금은 피플펀드가 임의로 입금 및 출금이 불가능한 구조</strong>로 되어있으며, </strong>투자금 관리 및 상환은 피플펀드의 도산 리스크와 절연되도록 하였습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>3) 피플펀드 부동산 상품에 대한 차별성</strong><br />"
+                    },
+                    {
+                        "type": "p",
+                        "text": "피플펀드는 개인신용상품부터 중소기업, 부동산담보, 부동산PF에 이르기까지 보다 양질의 금융 기회를 대출자와 투자자에게 제공할 수 있는 전 영역을 사업영역으로 하고 있습니다. 최근 부동산 상품관련 이슈가 제기됨에 따라, 피플펀드의 부동산 상품에 대한 입장을 말씀 드리고자 합니다.<br/><br />각 영역의 상품을 통해 누적 2천여억원을 운용해온 피플펀드는, 개인신용이나 중소기업, 부동산, 부동산PF 등 각 상품들은 거시경제흐름과 정책적 방향성, 그리고 심사전문성 등에 의해 각기 다른 영향을 받으므로 특정 상품군을 구분지어 안정성과 위험성을 비교하기는 어렵다는 기본적인 입장을 가지고 있습니다.<br/><br />특히 피플펀드의 부동산 상품은, 일부 대부업체 및 사채업체가 상품으로 해 온 고위험/고금리의 투기성 상품을 취급하지 않습니다. 피플펀드의 부동산 상품은, <strong>총 사업비 최소 300억원에서 최대 1조원 규모의 중대형 프로젝트</strong>를 중심으로, <strong>증권사 및 저축은행 등 금융기관과 함께 자금을 조달하는 신디케이트 방식(Syndicated Loan)을 지향</strong>함으로써 소형 시행사와 시공사의 리스크에 열려있는 100억원 미만의 소형 프로젝트와 연관된 상품은 취급하지 않고 있습니다. 즉 피플펀드의 부동산PF는 <strong>1차적으로 대형 증권사 등의 금융기관이 상품의 안정성과 신뢰성을 검토한 상품</strong>이며, 대형 프로젝트이므로 우량 건설사 및 신탁사가 관리하게 된다는 측면에서, 위험성이 높은 타 부동산PF 상품들과는 분명히 구분됩니다.<br/>실제 P2P금융 업계 내에서 문제를 일으킨 업체들이 출시한 부동산PF 상품 역시 사업비 100억원 미만의 고위험/고금리의 소규모 상품들로, 피플펀드의 부동산PF 상품과는 그 성격과 안정성 측면에서 명확한 차이가 있음을 말씀 드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>4) 연체 및 부실 채권</strong><br /"
+                    },
+                    {
+                        "type": "p",
+                        "text": "약 2년 간 570여 건의 채권을 출시하고 운영해오는 동안 피플펀드 역시 다수의 연체가 발생하고, 일부 채권들은 부실로 이어지기도 하였습니다. 담보채권 기준, 6월 4일 현재에도 5건의 연체와 8건의 부실 채권이 있고, 이로 인해 해당 채권에 투자하신 투자자분들께 본의 아니게 자금운용상의 차질을 드리게 되어 깊이 책임을 통감하고 있습니다.<br/><br />피플펀드는 현재 전문 채권관리팀과 법무팀 등이 각 채권들의 상환을 위해 전력을 다하고 있으며, 실제로 꾸준히 연체 건들을 해결해오고 있습니다. 많은 분들이 투자하셨던 일부 대형 상품의 장기연체도 있었고 상환이 사실상 어려울 것이라 평가되는 채권들도 있었지만, 다소 시간은 걸리더라도 <strong>대부분 투자원금의 손실없이 상환하였으며 누적 원금 손실률은 0.06%을 유지</strong>하고 있습니다.  <br/><br />아직 해결되지 않은 채권들 역시 모든 역량을 다해 투자자분들의 소중한 자금을 상환 드릴 수 있도록 최선을 다할 것을 약속 드립니다. 결과적인 투자금의 상환을 최우선으로 하고 있기에, 상환 결과에 영향을 미칠 수 있는 차주 정보 및 피플펀드가 기울이고 있는 노력 등을 모두 안내 드리지는 못하는 점 깊은 양해를 부탁 드립니다. 그러나 법무팀 및 채권관리팀의 검토를 통해 공개 가능한 모든 정보를 투자자분들께 전달해드리고 있으며, 홈페이지를 통해 누구든 현재 연체 및 부실 상태인 채권들을 확인하실 수 있도록 하고 있습니다. <strong>피플펀드는 연체 및 부실 채권 리스트가 없어지고 모든 투자금이 상환되는 순간까지 최선의 노력을 다할 것입니다.</strong>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>5) 법제화와 감독규정의 필요성</strong><br />"
+                    },
+                    {
+                        "type": "p",
+                        "text": "피플펀드는 P2P금융이 투자자와 대출자 모두에게 직접적인 혜택을 드릴 수 있는 모델이라고 굳게 믿습니다. 많은 분들이 이에 공감하셨기에 지난 2년간 2조 3천억원 이상의 자금이 P2P금융을 통해 취급되었다고 생각합니다. 그러나 뜨거웠던 열기만큼, 사업적 역량이나 필요한 윤리의식을 충분히 갖추지 못한 업체들도 생겨났으며 이로 인해 피해를 입는 분들도 생겨나고 있는 것이 사실입니다.<br/><br />일련의 사건들로 인한 피해가 최소화되길 바랍니다. 동시에 이로인해 P2P금융 산업으로 사회적 이목이 집중되고 업계 내에서 자정작용에 대한 논의도 활발해지며, 금융당국에서도 법제화 및 합리적 규제에 대한 진행을 서두르게 되기를 바랍니다. 피플펀드는 P2P금융이 처음의 취지와 같이 많은 대출자들과 투자자들에게 양질의 금융 기회를 제공하는 사회적 역할을 수행할 수 있도록 업권의 건전한 성장을 위해 지속적으로 노력하겠습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 42,
+                "date": "2018-06-01",
+                "title": "자동투자 서비스 도입 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "안녕하세요, 피플펀드입니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "피플펀드가 투자자분들의 지속적인 요청으로 더 안전하고 편리한 서비스를 제공해 드리기 위해 자동투자 서비스를 런칭하였습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "자동투자 서비스란, 투자자가 <strong>1.설정해 놓은 조건에 부합하는 담보채권</strong>에 <strong>2.예치금 한도 내</strong>에서 로그인 없이 <strong>3.자동으로 투자</strong>되는 서비스로, 담보채권 예치금 계좌를 가진 투자자 누구나 이용할 수 있습니다. "
+                    },
+                    {
+                        "type": "p",
+                        "class": "blue",
+                        "text": "자동투자 서비스 이용으로 다양한 채권에 분산투자하여 안전하고 편리한 투자를 경험하세요.<br/>자세한 내용 확인하기: <a href=\"https://www.peoplefund.co.kr/showcase/autoInvest\" style=\"\">https://www.peoplefund.co.kr/showcase/autoInvest</a>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br/>감사합니다.<br/>피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 41,
+                "date": "2018-05-11",
+                "title": "[당첨자 발표] 천기누설 이벤트",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "2017년 9월 11일부터 24일까지 진행된 <strong>‘천기누설’ 이벤트 하나: “날짜를 맞히면 1,000만원!”</strong> 에 참여해주신 모든 분들께 진심으로 감사드립니다. 총 10분이 피플펀드 누적투자액 2천억원 달성일을 2018년 5월 11일로 정확히 맞추셨습니다. 당첨자와 리워드 지급은 아래과 같습니다."
+                    },
+                    {
+                        "type": "p",
+                        "class": "blue",
+                        "text": "<strong style=\"color:#0A7EC6;\">당첨자 (총 10명)</strong>"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>고*원 (010-****-9898)  < /li>",
+                            "<li>김*진 (010-****-3217)</li>",
+                            "<li>김*학 (010-****-0512)</li>",
+                            "<li>이*민 (010-****-6749)</li>",
+                            "<li>이*리 (010-****-4395)</li>",
+                            "<li>이*철 (010-****-6861)</li>",
+                            "<li>임*수 (010-****-0265)</li>",
+                            "<li>장* (010-****-1949)</li>",
+                            "<li>조*기 (010-****-1139)</li>",
+                            "<li>최*린 (010-****-0367)</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "*당첨자분들께 개별 연락드리겠습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br/><strong style=\"color:#0A7EC6;\">리워드 지급</strong>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "리워드: 피플펀드 포인트 10,000,000P를 당첨자 10명에게 1/n로 지급. (제세공과금 제외)<br/>지급일: 2018년 5월 30일 (수) "
+                    },
+                    {
+                        "type": "p",
+                        "text": "참여해주신 모든 분들께 다시 한 번 감사드립니다. 앞으로 더 좋은 투자상품과 즐거운 이벤트로 찾아 뵙겠습니다.  "
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br/>감사합니다.<br/>피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 38,
+                "date": "2018-02-27",
+                "title": "금융감독원 P2P 연계대부업 등록 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "안녕하세요, 피플펀드입니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "피플펀드가 2018년 2월 27일 부로 금융감독원 P2P연계대부업으로 등록되었습니다."
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>P2P연계 대부업체명: (주)피플펀드대부</li>",
+                            "<li>등록번호: 2018-금감원-1359</li>",
+                            "<li>기준일: 2018년 2월 27일 </li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "금감원 등록과 함께 보다 안전하고 편리한 서비스를 제공해 드릴 수 있도록 최선을 다하겠습니다. "
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br/>감사합니다.<br/>피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 37,
+                "date": "2018-02-21",
+                "title": "[당첨자 발표] 2018 올한해도 건강하개",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "지난 2월 12일부터 18일까지 진행된 ‘2018 올한해도 건강하개’ 이벤트에 참여해주신 모든 분들께 진심으로 감사드립니다. 리워드 지급과 당첨자는 아래와 같습니다."
+                    },
+                    {
+                        "type": "p",
+                        "class": "blue",
+                        "text": "<strong style=\"color:#0A7EC6;\">01. “매일매일 건강하개” 당첨자</strong>"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>나이키 운동화: 이*근 (010-****-2001)</li>",
+                            "<li>나이키 윈드러너: 고*혜 (010-****-4266)</li>",
+                            "<li>Fitbit Alta: 강*욱 (010-****-1186)</li>",
+                            "<li>탱그램 스마트로프: 전*경 (010-****-9239)</li>",
+                            "<li>홍삼정 에브리타임: 함*헌 (010-****-2020)</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "*당첨자분들께 개별 연락드리겠습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br/><strong style=\"color:#0A7EC6;\">02. “투자는 더 즐겁개” 리워드 지급</strong>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "리워드: 투자금액별 신세계상품권 5천원~5만원<br/>지급일: 2018년 2월 21일 (수)<br/>참여해주신 모든 분들께 다시 한 번 감사드립니다. 앞으로 더 좋은 투자상품과 즐거운 이벤트로 찾아 뵙겠습니다.  "
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br/>감사합니다.<br/>피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 36,
+                "date": "2018-02-09",
+                "title": "설 연휴 휴무 및 상환 일정 안내 ",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "피플펀드를 이용해 주시는 고객님들께 새해 감사인사를 전하며,<br/>2018년 고객님들의 건강과 행복을 기원합니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "설 연휴 휴무 및 상환 일정을 다음과 같이 안내해 드리오니 서비스 이용에 참고하시기 바랍니다."
+                    },
+                    {
+                        "type": "table",
+                        "text": "<thead> <tr> <th colspan=\"2\">설 휴무 및 상환 일정</th> </tr></thead><tbody> <tr> <th>휴무기간</th> <td>설 명절로 인한 공휴일 (2018.02.15 - 2018.02.18)</td> </tr> <tr> <th>이용 불가 서비스</th> <td>대출 심사, 유선 및 온라인 상담</td> </tr> <tr> <th>정상 진행 서비스</th> <td>이자율 조회, 예치금 입출금, 투자모집 중인 채권 투자</td> </tr> <tr> <th>상환일정</th> <td> 1) 차주 상환일 2월 14일(수) 채권<br /> - 2월 14일(수) 차주 상환 진행<br /> - 2월 14일(수) 투자자 상환 진행<br /><br /> 2) 차주 상환일 2월 15일(목) - 2월 18일(일) 채권<br /> - 2월 19일(월) 차주 상환 진행<br />- 2월 20일(화) 투자자 상환 진행<br /><br />*근거: 민법 제161조(공휴일 등과 기간의 만료점)</td> </tr></tbody>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "휴무 기간 동안 유선 및 온라인 상담이 어려우며, 2월 19일 (월) 부터 모든 업무가 정상적으로 운영됩니다.<br/>문의사항은 피플펀드 고객경험팀(02-6212-0700)으로 연락주시기 바랍니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "감사합니다.<br/>피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 35,
+                "date": "2018-02-09",
+                "title": "법정 최고금리 변경 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "안녕하세요, 피플펀드입니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "대부업법·이자제한법 시행령 개정에 따라 법정 최고금리가 24%로 조정 되었습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "법정 최고금리 변경에 따라 2018년 2월 8일 이후의 모든 신규 계약 및 갱신, 연장 계약의 최고 이자율은 연 24%를 초과하지 않는 범위 내에서 적용될 예정입니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "관련 문의 사항은 피플펀드 고객경험팀(02-6212-0700)으로 연락 부탁드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "감사합니다.<br/>피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 34,
+                "date": "2018-01-24",
+                "title": "개인신용대출 서비스 개선작업 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "안녕하세요, 피플펀드입니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "개인신용대출 서비스 개선을 위해 아래와 같이 이자율 조회 및 대출신청이 잠시 제한됨을 안내 드립니다."
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>이용 제한 기간 : 1월 26일(금) ~ 2월 4일(일)</li>",
+                            "<li>이용 제한 내역 : 대출서비스 이자율 조회 및 신청</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<small>*진행 상황에 따라 일정은 연장 혹은 축소될 수 있습니다.</small>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "신청 절차를 완료하지 않은 기존 진행내용은 초기화될 예정입니다. 진행내용의 초기화를 원하지 않으시는 경우 개선 절차 진행 전 대출신청을 완료해 주시기 바랍니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "관련 문의 사항은 피플펀드 고객경험팀으로 연락해 주시기 바랍니다.<br/>피플펀드 고객경험팀 : 02-6212-0700"
+                    },
+                    {
+                        "type": "p",
+                        "text": "감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 33,
+                "date": "2018-01-24",
+                "title": "앱 서비스 (개인채권투자 전용) 종료 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "안녕하세요, 피플펀드입니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "2018년 1월 31일부터 피플펀드 앱(App) 서비스가 종료됩니다.<br/>앱 서비스를 통해 개인채권 투자를 진행하시던 투자자분들께서는 PC 혹은 모바일 웹(web) 페이지 접속을 통하여<br/>서비스를 이용해주시면 감사하겠습니다.<br/>추후 보다 편리하고 안정적인 서비스로 찾아 뵙도록 하겠습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 31,
+                "date": "2017-12-26",
+                "title": "메리 피플 크리스마스 이벤트 참여고객 리워드 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "지난 12월 19일부터 25일까지 진행된 ‘메리 피플 크리스마스’ 이벤트가 종료되었습니다.<br />참여해 주신 모든 분들께 진심으로 감사드립니다. 각 리워드 지급은 아래 내용을 참고해 주시기 바랍니다. 아래 1등 경품에 당첨되신 분께 축하의 말씀을 드리며, 1월 2일 (화)에 개별 연락드리겠습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong>신세계상품권 100% 선물</strong>"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>리워드 : 투자금액별 신세계상품권 1-5만원</li>",
+                            "<li>지급일 : 2018년 1월 4일 (목)</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong>내가 고르는 크리스마스 선물</strong>"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>당첨자 : 하*영 (010-****-7898)</li>",
+                            "<li>지급일 : 2018년 1월 2일 (화) 개별 연락 예정</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "참여해 주신 모든 분들께 다시 한 번 감사드립니다. 앞으로 더 좋은 투자상품과 즐거운 이벤트로 찾아뵙겠습니다.<br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 30,
+                "date": "2017-10-23",
+                "title": "11월말 깜짝 이벤트 [신세계상품권 1만원] (~11월30일까지)",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "기간 : 11월 29일(수)과 30일(목), 딱 이틀동안"
+                    },
+                    {
+                        "type": "p",
+                        "text": "대상 : 피플펀드 담보채권에 50만원 이상 투자하시는 모든 분께<br />리워드 : 신세계상품권 1만원권을 드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "* 리워드는 12월 11일 (월) 에 일괄 발송할 예정입니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<a href=\"/showcase/list/\" class=\"blue-1\">투자상품 보러가기</a>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "유의사항"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>별도의 참여 과정 없이, 투자 완료하시면 자동 참여됩니다.</li>",
+                            "<li>여러 상품에 투자하신 경우, 투자 합계 금액이 50만원 이상이시면 자동 참여됩니다.</li>",
+                            "<li>변경 공지사항 문구: 투자자 개인 당 1회 참여 가능하며, 타 이벤트와 중복으로 지급되지 않습니다.<br />(단, 불로소득 리워드는 중복으로 지급됩니다.)</li>",
+                            "<li>리워드 수량이 많을 경우 예정일보다 다소 지연될 수 있습니다.</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 29,
+                "date": "2017-10-23",
+                "title": "담보채권 투자계좌발급 과정 개선작업 공지",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "안녕하세요, 피플펀드입니다.<br />개선된 투자자 등록 절차의 시범운영을 위해, 회원가입 및 투자자등록이 잠시 제한됨을 안내 드립니다."
+                    },
+                    {
+                        "type": "table",
+                        "text": "<tbody><tr><th><strong>이용 제한시간</strong></th><td>10.24 (화) 오전 8시 ~ 오전 10시<br />* 진행 상황에 따라 제한시간은 다소 연장될 수 있습니다.</td></tr><tr><th><strong>이용 제한 내역</strong></th><td><ul><li>피플펀드 홈페이지 회원가입</li><li>담보채권 투자자 계좌 등록</li><li>개인채권 투자자 계좌 등록</li></ul></td></tr><tr><th><strong>이용 가능 내역</strong></th><td><ul><li>회원가입 및 투자자 등록 절차 이외의 사항</li><li>개인대출 이자율조회 후 회원가입과정</li></ul></td></tr></tbody>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "투자자등록 절차의 변경으로, 투자자등록 과정을 완료하지 않고 진행중 상태에 있는 고객들은 기존 진행 내용이 초기화됩니다. 초기화를 원하지 않는 고객께서는 개선 절차 진행 전 투자자등록 과정을 완료해주시기 바랍니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<a href=\"/auth/login/?r=/showcase/entry/\" class=\"blue-1\">투자자 등록 바로가기</a>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "고객님들께서 더욱 편리하게 피플펀드를 이용하실 수 있도록 지속적으로 서비스를 개선해 나가겠습니다.<br />관련 문의사항은 피플펀드 고객경험팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 고객경험팀 : 02-6212-0700"
+                    },
+                    {
+                        "type": "p",
+                        "text": "감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 28,
+                "date": "2017-10-19",
+                "title": "출금수수료 면제 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "안녕하세요 피플펀드 입니다.<br />10월 19일부터 피플펀드 예치금 출금수수료가 전액 면제됩니다."
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>기존 : 출금 1회 당 수수료 500원 부과 (월 2회 면제)</li>",
+                            "<li>변경 : 출금 수수료 면제 (출금횟수와 무관)</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "전북은행의 투자금관리서비스 이용에 따라 타 금융사 계좌를 이용하시는 경우 출금 시 타행 이체 수수료가 부과되었으나, 투자자분들의 부담을 최소화하고자 은행과의 지속적 협의를 통해 피플펀드 고객분들께는 금융사 및 횟수에 제한없는 출금수수료 면제를 적용하게 되었습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "피플펀드를 이용해주셔서 진심으로 감사드립니다. 더 좋은 서비스를 제공해드릴 수 있도록 항상 노력하겠습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "관련 문의사항은 피플펀드 고객경험팀(02-6212-0700)으로 연락 주시기 바랍니다.<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 27,
+                "date": "2017-10-11",
+                "title": "개인대부업사업자 등록절차 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "개인대부업사업자 등록절차 안내 드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong>1. 내용</strong><br />"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>개인대부업사업자의 투자수익에 대한 원천징수 면제 (사업소득 적용)</li>",
+                            "<li>대상: 담보채권투자 (개인채권투자 미적용)</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong>2. 신청방법</strong><br />"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>STEP1. 투자자등록</li>",
+                            "<li>STEP2. 증빙서류 스캔<ul>",
+                            "\t<li>대부업등록증</li>",
+                            "\t<li>사업자등록증</li>",
+                            "\t<li>신분증</li>",
+                            "</ul></li>",
+                            "<li>STEP3. 증빙서류를 피플펀드 이메일(<a href=\"mailto:ask@peoplefund.co.kr\">ask@peoplefund.co.kr</a>)로 송부</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br />관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 26,
+                "date": "2017-09-25",
+                "title": "추석 연휴 휴무 및 상환 일정 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "항상 피플펀드를 이용해 주시는 고객님께 깊이 감사드립니다. 추석연휴 휴무 및 상환 일정을 다음과 같이 공지하오니 서비스 이용에 참고하시기 바랍니다."
+                    },
+                    {
+                        "type": "table",
+                        "text": "<thead><tr><th colspan=\"2\">추석 휴무 및 상환 일정</th></tr></thead><tbody><tr><th>휴무기간</th><td>추석 명절로 인한 공휴일 (10.02 (월) - 10.09 (월))</td></tr><tr><th>이용 불가 서비스</th><td>대출 심사, 신규채권 업로드</td></tr><tr><th>정상 진행 서비스</th><td>온라인 이자율 조회, 투자금 상환, 예치금 입출금 (1영업일 이내)</td></tr><tr><th>상환일정</th><td>1) 차주 상환일 9월 29일(금) 채권<br /> - 9월 29일(금) 차주 상환 진행<br /> - 9월 30일(토) 정산(투자자 상환) 진행<br /><br />2) 차주 상환일 10월 2일(임시공휴일), 10월 6일(대체휴일) 채권<br /> - 10월 10일(화) 차주 상환 진행*<br /> - 10월 11일(수) 정산(투자자 상환) 진행<br /><br />*근거: 민법 제161조(공휴일 등과 기간의 만료점)</td></tr></tbody>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "해당 기간 동안 유선 및 온라인 상담이 어려우며, 10.10 (화) 부터 모든 업무가 정상적으로 진행됩니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 25,
+                "date": "2017-09-25",
+                "title": "천기누설 이벤트 참여고객 리워드 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "안녕하세요 피플펀드 입니다.<br />천억돌파 기념 누구나 설렐만한 “천기누설 이벤트”가 성황리에 종료되었습니다. 참여해주신 모든 분들께 진심으로 감사드리며, 각 이벤트 별 리워드 지급은 아래 내용을 참고해주시기 바랍니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>[이벤트1 : 날짜를 맞히면 1,000만원]</strong><br />"
+                    },
+                    {
+                        "type": "ol",
+                        "text": [
+                            "<li>리워드 : 예치금 1천만원</li>",
+                            "<li>지급일 : 2천억 돌파 이후 (2천억 돌파 무렵, 재안내 예정)</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>[이벤트2 : 공유하면 무조건 CU 1,000원]</strong><br />"
+                    },
+                    {
+                        "type": "ol",
+                        "text": [
+                            "<li>리워드 : CU상품권 1,000원</li>",
+                            "<li>지급일 : 금주에 SMS로 경품 지급 예정</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>[이벤트3 : 투자를 시작하면, 스벅 1,000잔]</strong><br />"
+                    },
+                    {
+                        "type": "ol",
+                        "text": [
+                            "<li>리워드 : 스타벅스 아메리카노 1잔</li>",
+                            "<li>지급일 : 금주에 SMS로 경품 지급 예정</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br />참여해주신 모든 분들께 다시 한 번 감사드립니다. 앞으로 더 좋은 투자상품과 즐거운 이벤트로 찾아 뵙겠습니다.<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 24,
+                "date": "2017-09-14",
+                "title": "투자금 입금 방식 개선 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "안녕하세요 피플펀드 입니다.<br />투자금 입금 방식이 개선되어 금일부터 지정계좌를 포함한 모든 본인명의 계좌에서 투자금 입금이 가능합니다."
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>기존 : 투자금 입금 시 지정계좌만 사용 가능 (지정계좌 → 예치금 계좌)</li>",
+                            "<li>변경 : 투자금 입금 시 본인명의 계좌 모두 사용 가능 (본인명의 계좌 → 예치금 계좌)</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "* 간편송금앱, 일부 증권사 등은 입금이 제한될 수 있습니다.<br />",
+                            "* 개인채권 투자자 등록 시 필요한 1원 인증 과정은 지정계좌를 이용하셔야 합니다."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br />앞으로도 보다 편리하게 이용하실 수 있는 피플펀드가 되겠습니다.<br />관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 23,
+                "date": "2017-09-12",
+                "title": "[마감] 불러소득 이벤트 - 친구를 부르면 소득이 생긴다.",
+                "contents": [
+                    {
+                        "type": "img",
+                        "width": "550px",
+                        "width_m": "100%",
+                        "src": "/files/promotion/img_notice_promotion_20180423.png",
+                        "src_2x": "/files/promotion/img_notice_promotion_20180423@2x.png",
+                        "src_m": "/files/promotion/img_notice_promotion_20180423.png",
+                        "src_m_2x": "/files/promotion/img_notice_promotion_20180423.png"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br />관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 22,
+                "date": "2017-08-22",
+                "title": "피플펀드 이용약관 변경 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "안녕하세요 피플펀드 입니다.<br />늘 피플펀드를 아껴주시는 투자고객분들께 감사드립니다. 더욱 신뢰를 드릴 수 있는 서비스를 제공하고자 피플펀드의 투자이용약관과 서비스이용약관이 개정되어 안내 드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>피플펀드 이용약관 개정</strong><br />"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>개정 대상: 원리금수취권 투자이용약관, 서비스이용약관</li>",
+                            "<li>개정 항목<ul>",
+                            "\t<li>원리금수취권 투자이용약관<ul>",
+                            "\t\t<li>제9조 (투자참가신청의 종료, 연체 및 부실관리)</li>",
+                            "\t\t<li>제12조 (약관의 개정)</li>",
+                            "\t</ul></li>",
+                            "\t<li>원리금수취권 서비스이용약관<ul>",
+                            "\t\t<li>제4조 (서비스이용계약의 성립 등)</li>",
+                            "\t\t<li>제7조 (회원의 의무)</li>",
+                            "\t\t<li>제8조 (서비스 이용권리의 양도 등)</li>",
+                            "\t\t<li>제16조 (이용약관의 효력 및 변경)</li>",
+                            "\t\t<li>제22조 (채권추심의 위임)</li>",
+                            "\t\t<li>제23조 (채권의 매각)</li>",
+                            "\t\t<li>제24조 (분쟁조정 및 관할법원)</li>",
+                            "\t</ul></li>",
+                            "</ul></li>",
+                            "<li>개정 내용: 첨부 파일 참조 (<a href=\"https://gallery.mailchimp.com/2959a307c9453d0a47c66de5a/files/97fb974b-473d-4323-a440-c5803e54d7b3/_%ED%94%BC%ED%94%8C%ED%8E%80%EB%93%9C_%EC%95%BD%EA%B4%80_%EB%B3%80%EA%B2%BD_%EC%8B%A0%EA%B5%AC%EB%8C%80%EC%A1%B0%ED%91%9C.pdf\" target=\"_blank\">약관변경 신구대조표</a>, <a href=\"https://gallery.mailchimp.com/2959a307c9453d0a47c66de5a/files/f6fa46d7-1ab5-47f9-8fed-dba303124ec2/_%ED%94%BC%ED%94%8C%ED%8E%80%EB%93%9C_%ED%88%AC%EC%9E%90%EC%9D%B4%EC%9A%A9%EC%95%BD%EA%B4%80.pdf\" target=\"_blank\">원리금수취권 투자이용약관 전문</a>, <a href=\"https://gallery.mailchimp.com/2959a307c9453d0a47c66de5a/files/60b3d73e-868d-4090-81c7-1e26a9973f6f/_%ED%94%BC%ED%94%8C%ED%8E%80%EB%93%9C_%EC%84%9C%EB%B9%84%EC%8A%A4%EC%9D%B4%EC%9A%A9%EC%95%BD%EA%B4%80_%EC%9B%90%EB%A6%AC%EA%B8%88%EC%88%98%EC%B7%A8%EA%B6%8C.pdf\" target=\"_blank\">서비스이용약관 전문</a>)</li>",
+                            "<li>개정 약관 시행일: 2017년 9월 4일</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "피플펀드를 이용해주셔서 감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 20,
+                "date": "2017-08-14",
+                "title": "[당첨자 발표] 마블 팝아트 채권 투자고객 리워드",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "담보채권 131호 ‘마블 팝아트 채권’ 에 투자해주신 모든 분들께 감사합니다. 리워드 관련한 내용은 아래 내용을 참고해주시기 바랍니다."
+                    },
+                    {
+                        "type": "ol",
+                        "text": [
+                            "<li>리워드 대상자<ul>",
+                            "<li>소형 팝아트 : 1백만원 이상 - 2백만원 미만 투자자 전원 (121명)</li>",
+                            "<li>중형 팝아트 : 2백만원 이상 - 3백만원 미만 투자자 전원 (38명)</li>",
+                            "<li>대형 팝아트 : 3백만원 이상 투자자 전원 (97명)</li>",
+                            "<li>특대형 팝아트 : 모든 투자자 중 1명 추첨, 당첨자 ‘박*현 (6331)’님</li>",
+                            "</ul></li>",
+                            "<li>리워드 배송<br />리워드를 포함한 1차 물량의 제작이 완료되면, 리워드가 발송됩니다.<ul>",
+                            "<li>제작완료 : 9월 중 (예정)</li>",
+                            "<li>배송일정 : 9월 말 (예정)</li>",
+                            "</ul></li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "리워드 이미지는 랜덤으로 발송됩니다. 배송지 주소 입력 등 배송 안내는 제작 완료 시 안내해 드리겠습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "당첨자 분께 진심으로 축하드리며, 투자해주신 모든 분들께 다시 한 번 감사드립니다. 앞으로도 피플펀드에 많은 관심 부탁드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "감사합니다.<br />피플펀드 드림."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<hr />"
+                    },
+                    {
+                        "type": "p",
+                        "text": "본 리워드 공지 업데이트 (2017.11.07)"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>각 투자고객의 희망 팝아트 선택 안내 (08.14)</li>",
+                            "<li>리워드 내역 최종 확정 및 배송정보 확인 (10.10)</li>",
+                            "<li>각 주소지로 리워드 일괄 배송 예정 (11.08)</li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "모든 투자고객분들께 다시 한 번 감사드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "감사합니다.<br />피플펀드 드림."
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 19,
+                "date": "2017-08-11",
+                "title": "[당첨자 발표] #피플모아 #수익찾자 #피플펀드 이벤트",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "#피플모아 #수익찾자 #피플펀드 이벤트가 마감되었습니다. 100개의 후기 모두 정성스럽게 작성해주셨기에 어느 한 분을 뽑기가 어려웠습니다. 참여해주신 모든 분들께 진심으로 감사의 인사를 드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "참여해주신 100분께 스타벅스 기프티콘은 8월 18일(금) 일괄 전달됩니다. 아래 1등 경품에 당첨되신 분께는 축하드리며, 8월 14일(월)에 개별 연락드리겠습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "<strong>1등 당첨자</strong><br >",
+                            "박*슬 5014<br />",
+                            "▷ 투자후기 보기 : <a href=\"https://goo.gl/kHs63n\" target=\"_blank\">https://goo.gl/kHs63n</a>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "다시 한 번 참여해주신 모든 분들께 감사의 마음을 전합니다.<br />앞으로도 피플펀드의 다양한 상품과 이벤트에 많은 관심 부탁드립니다.<br /><br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 18,
+                "date": "2017-08-10",
+                "title": "[당첨자 발표] 홈쇼핑 담보채권 5호 경품",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "홈쇼핑 상품 매출 담보채권 5호에 투자해주신 모든 분들께 진심으로 감사드립니다.<br />500만 원 이상 투자하신 분들 중 총 10분의 당첨을 축하드리며, 당첨되신 분들께 별도로 개별적인 연락을 드릴 예정입니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong>성함 / 휴대폰 뒷자리</strong>"
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>강*훈 / 3825</li>",
+                            "<li>권*원 / 0080</li>",
+                            "<li>김*은 / 5511</li>",
+                            "<li>김*영 / 8559</li>",
+                            "<li>박*호 / 2865</li>",
+                            "<li>박*석 / 2397</li>",
+                            "<li>석*민 / 6127</li>",
+                            "<li>손*현 / 8025</li>",
+                            "<li>이*순 / 4871</li>",
+                            "<li>최*석 / 9528"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "앞으로도 피플펀드의 투자 상품과 서비스에 많은 관심 부탁드립니다.<br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 17,
+                "date": "2017-08-04",
+                "title": "[마감] #피플모아 #수익찾자 #피플펀드 투자후기 이벤트",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "8월 4일부터 피플펀드 투자후기 이벤트를 진행합니다.<br /><strong>#피플모아 #수익찾자 #피플펀드</strong> 이벤트에 많은 참여 부탁드립니다."
+                    },
+                    {
+                        "type": "ul",
+                        "text": [
+                            "<li>이벤트 기간 : 선착순 100명 참여 시 마감</li>",
+                            "<li>당첨자 발표 : 선착순 마감 후 홈페이지 공지</li>"
+                        ]
+                    },
+                    {
+                        "type": "img",
+                        "width": "550px",
+                        "width_m": "100%",
+                        "src": "/files/promotion/img_notice_promotion_20170804_3.png",
+                        "src_2x": "/files/promotion/img_notice_promotion_20170804_3.png",
+                        "src_m": "/files/promotion/img_notice_promotion_20170804_3.png",
+                        "src_m_2x": "/files/promotion/img_notice_promotion_20170804_3.png"
+                    },
+                    {
+                        "type": "p",
+                        "text": "감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 16,
+                "date": "2017-07-28",
+                "title": "외부회계 검사 및 웹 취약점 점검 결과",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "당사는 고객님들의 자산과 정보를 안전하게 관리하기 위하여 2017년 상반기 진행되었던 외부회계 검사 및 웹 취약점 점검 결과를 아래와 같이 안내드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br /><strong>외부회계 검사 및 웹 취약점 점검 결과</strong>"
+                    },
+                    {
+                        "type": "ol",
+                        "text": [
+                            "<li>외부회계 검사 (실시일: 2017년 3월 21일)<ul><li>예치금 관리의 적정성: 특이사항 없음</li><li>대출채권의 적정성: 특이사항 없음</li><li>연체율 및 부실률의 적정성: 특이사항 없음</li><li>공시사항 적정성: 특이사항 없음</li><li>기타 특이사항: 거래 구조 상의 관계사 참여</li><li>기타 특이사항에 대한 조치: 2017년 5월 10일부로 해당 사항 해소(관계사 지분 정리)</li></ul></li>",
+                            "<li>웹 취약점 점검 (실시일: 2017년 5월 22일)<ul><li>점검결과: 실질적 위협 발견되지 않음</li><li>추가조치: 이후 Web Application Firewall 및 IPS(침입탐지시스템) 도입으로 점검 시점보다 더욱 높은 안정성 확보</li></ul></li>",
+                            "<li>DDoS 사이버대피소 사전등록<ul><li>대체 서비스인 Managed DDoS Protection 이용</li></ul></li>"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "<br />관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 15,
+                "date": "2017-07-05",
+                "title": "7월 7일 (금) 휴무 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "항상 피플펀드를 이용해 주시는 고객님께 깊이 감사드립니다. 피플펀드 내부 사정에 따른 7월 7일 (금) 휴무를 다음과 같이 공지하오니 서비스 이용에 참고하시기 바랍니다."
+                    },
+                    {
+                        "type": "table",
+                        "text": "<thead><tr><th colspan=\"2\">피플펀드 7월 7일 (금) 휴무 안내</th></tr></thead><tbody><tr><th>휴무기간</th><td>07.07 (금)</td></tr><tr><th>이용 불가 서비스</th><td>대출신청 건 심사, 신규채권 업로드</td></tr><tr><th>정상 진행 서비스</th><td>온라인 이자율 조회, 투자금 상환, 예치금 입출금 (1영업일 이내)</td></tr></tbody>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "해당 기간 동안 유선 및 온라인 상담이 어려우며, 07.10 (월) 부터 모든 업무가 정상적으로 진행됩니다. 넓은 이해 부탁드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 14,
+                "date": "2017-07-11",
+                "title": "한국P2P금융협회 제명 논의와 관련된 언론보도에 대한 공식입장",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "안녕하세요, 피플펀드입니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "피플펀드를 아껴 주시는 모든 분들께 언제나 마음 깊이 감사 드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "최근 일부 언론보도와 관련한 지속적인 문의가 있어 이에 대한 명확한 답변을 드리고자 합니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "금일 진행된 한국P2P금융협회 이사회에서 피플펀드는 이사 자격으로 참여하였으며, 당사는 제명 대상으로 논의된 바가 없으며 제명 논의 안건으로도 포함되지 않았음을 분명히 합니다. 더 이상 악의적인, 혹은 불필요한 추측성 정보가 유포되는 것에 대해서는 단호히 대처하겠습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "관련 문의사항은 피플펀드(02-6212-0700)로 연락주시면 상세히 답변 드리도록 하겠습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "다시 한 번, 피플펀드를 아껴주시는 모든 분들께 머리 숙여 감사 드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 13,
+                "date": "2017-06-26",
+                "title": "트렌치A 상품조건 다변화 및 수수료 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "안녕하세요, 피플펀드입니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "트렌치A 는 다수의 개인채권을 분산하여 선순위로 투자하는 상품으로, 많은 투자자분들의 사랑을 받고 있는 피플펀드의 대표 상품입니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "피플펀드는 그동안 트렌치A에 대해 전해주신 의견들을 반영하여 금리와 기간을 달리한 새로운 상품을 선보이고자 합니다.<br />이와 함께, 초기 운영 기간 중 면제되었던 플랫폼 수수료를 정상수취함으로써 보다 안정적인 서비스를 제공하고자 합니다.<br />새로운 상품과 정책에 대해 투자자분들의 많은 호응과 이해 부탁 드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "1. 트렌치A 신규상품 출시<br />&nbsp;- 기존 : 3개월, 9%<br />&nbsp;- 신규(추가) : 6개월, 10.5% / 12개월, 11%"
+                    },
+                    {
+                        "type": "p",
+                        "text": "2. 플랫폼 수수료 안내<br />&nbsp;- 연 1.2%, 원리금 상환 시 선취"
+                    },
+                    {
+                        "type": "p",
+                        "text": "관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 12,
+                "date": "2017-06-05",
+                "title": "카카오톡 상담서비스 안내",
+                "contents": "<p>공지사항 수정쓰</p>",
+                "modified_datetime": "2018-10-17 15:57:37"
+            },
+            {
+                "type": "normal",
+                "id": 11,
+                "date": "2017-06-01",
+                "title": "출금 시스템 및 출금수수료 변경사항 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "안녕하세요, 피플펀드 입니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "P2P가이드라인에 따라 담보채권 예치금 계좌를 은행과 연동하는 작업이 진행되었습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "이로 인한 변동사항을 명확히 안내드리고, 시스템 점검 작업 지연 및 출금수수료 부과로 인해 불편을 드린 점에 대해 사과의 말씀을 드리고자 합니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong>1. 실시간 출금 시스템 도입</strong><br />시스템 연동을 통해 은행의 자동화 시스템을 직접 이용하게 되었습니다.<br />이로 인해 출금 신청 후 최대 1영업일이 소요되던 기존 방식이 개선되어, 출금 신청 즉시 처리가 완료됩니다"
+                    },
+                    {
+                        "type": "p",
+                        "text": "<strong>2. 담보채권 예치금 계좌 출금수수료 부과</strong><br />은행의 자동화 시스템을 직접 이용하게 됨에 따라, 담보채권 예치금 계좌에도 은행 출금수수료 500원이 부과되게 되었습니다. 개인채권 예치금 계좌와 담보채권 예치금 계좌를 통합하여 월 2회 수수료를 면제해드리고 있으나, 투자자분들께는 여전히 부담이 되는 부분임을 인지하고 있습니다. 이에 투자고객 분들의 출금수수료 부담을 최소화하기 위하여 은행과의 협의 중에 있으며, 조속한 시일 내에 개선된 수수료정책을 마련하여 안내드리도록 하겠습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "해당 작업이 예정보다 많은 시간이 소요됨에 따라 이용에 불편을 드려 다시 한 번 죄송한 말씀 드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 10,
+                "date": "2017-05-28",
+                "title": "'P2P 대출 가이드라인’에 따른 서비스 점검 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "항상 피플펀드를 이용해 주시는 고객님께 깊이 감사드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "P2P 가이드라인의 적용을 위한 은행과의 시스템 점검으로 인해, 5월 29일 (월) 00:00 ~ 5월 30일 (월) 12:00 동안 모든 담보채권 투자 서비스 이용이 제한되오니 고객님의 넓은 양해 부탁드립니다."
+                    },
+                    {
+                        "type": "table",
+                        "text": "<thead><tr><th colspan=\"2\">피플펀드 담보채권 서비스 점검 안내</th></tr></thead><tbody><tr><th>점검기간</th><td>05.29 (월) 00:00 ~ 05.30 (화) 12:00</td></tr><tr><th>이용 불가 서비스</th><td>담보채권 서비스(신규투자, 담보채권 예치금 계좌 입출금)</td></tr><tr><th>정상 진행 서비스</th><td>개인채권 투자/대출은 정상 이용가능</td></tr></tbody>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "고객님의 넓은 이해와 더불어 피플펀드 이용에 착오 없으시길 바랍니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 8,
+                "date": "2017-04-26",
+                "title": "5월 첫째주 휴무 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "항상 피플펀드를 이용해 주시는 고객님께 깊이 감사드립니다. 피플펀드의 5월 첫째 주 휴무를 다음과 같이 공지하오니 서비스 이용에 참고하시기 바랍니다."
+                    },
+                    {
+                        "type": "table",
+                        "text": "<thead><tr><th colspan=\"2\">피플펀드 5월 첫째주 휴무 안내</th></tr></thead><tbody><tr><th>휴무기간</th><td>05.01 (월) - 05.05 (금)</td></tr><tr><th>이용 불가 서비스</th><td>대출신청 건 심사, 신규채권 업로드</td></tr><tr><th>정상 진행 서비스</th><td>온라인 이자율 조회, 투자금 상환, 예치금 출금 (1영업일 이내)</td></tr></tbody>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "해당 기간 동안 유선 및 온라인 상담이 어려우며, 05.08 (월) 부터 모든 업무가 정상적으로 진행됩니다. 고객님의 넓은 이해와 더불어 피플펀드 이용에 착오 없으시길 바랍니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 7,
+                "date": "2017-04-26",
+                "title": "담보채권 예치금 계좌와 개인채권 예치금 계좌 구분",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "피플펀드 투자는 개인채권 투자와 담보채권 투자로 나뉩니다."
+                    },
+                    {
+                        "type": "img",
+                        "width": "392px",
+                        "width_m": "293px",
+                        "src": "/files/images/img_account_info.png",
+                        "src_2x": "/files/images/img_account_info@2x.png",
+                        "src_m": "/files/images/img_account_info_m.png",
+                        "src_m_2x": "/files/images/img_account_info_m@2x.png"
+                    },
+                    {
+                        "type": "p",
+                        "text": "'개인채권 전용 예치금 계좌'로는 개인채권에만 투자하실 수 있으며 '담보채권 전용 예치금'으로는 담보채권에만 투자하실 수 있습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "개인채권 전용 예치금과 담보채권 전용 예치금 계좌는 서로 이체가 불가능하므로, 유의하시기 바랍니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 6,
+                "date": "2017-04-26",
+                "title": "담보채권 투자 수수료 정책",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "피플펀드는 고객 여러분께 지속적으로 매력적인 상품을 제공하고 더 좋은 서비스로 발전하고자, 개인채권 투자고객분들께 소정의 수수료를 부과합니다. 투자 수수료는 아래의 원칙에 따라 책정됩니다."
+                    },
+                    {
+                        "type": "table",
+                        "text": "<thead><tr><th colspan=\"2\">피플펀드 담보채권 수수료 정책</th></tr></thead><tbody><tr><th>수수료율</th><td>매월 투자원금 잔액의 약 0.1% (일할계산)</td></tr><tr><th>부과대상</th><td>2017년 3월 2일 이후 공개되는 모든 담보채권</td></tr><tr><th>수취시점</th><td>매 상환 시 선취</td></tr><tr><th>유의사항</th><td>- 향후 수수료가 적용되는 모든 담보채권의 경우, 상환스케쥴 표에서 정확한 수수료 부과액을 확인하신 후 투자하실 수 있습니다.<br /> - 윤년일 경우, 366일 기준으로 수수료가 계산됩니다.</td></tr></tbody>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 5,
+                "date": "2017-04-26",
+                "title": "개인채권 투자 수수료 정책",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "피플펀드는 고객 여러분께 지속적으로 매력적인 상품을 제공하고 더 좋은 서비스로 발전하고자, 개인채권 투자고객분들께 소정의 수수료를 부과합니다. 투자 수수료는 아래의 원칙에 따라 책정됩니다."
+                    },
+                    {
+                        "type": "table",
+                        "text": "<thead><tr><th colspan=\"2\">피플펀드 개인채권 수수료 정책</th></tr></thead><tbody><tr><th>수수료율</th><td>담보예금 참가기간에 따라<br /> - 6개월 이하 : 연 2%<br /> - 6개월 초과 12개월 이하 : 연 2%<br /> - 12개월 초과 : 연 1.2%</td></tr><tr><th>부과대상</th><td>피플펀드 개인채권</td></tr><tr><th>수취시점</th><td>매 상환 시 선취 (수수료 선취 후 과세)</td></tr><tr><th>유의사항</th><td> - 상환 시 투자잔액을 기준으로 수수료가 책정됩니다.<br /> - 연체 및 부실로 인한 미상환 시 수수료는 부과되지 않습니다.<br /> - 연체 후 상환 시, 연체기간 동안의 투자잔액을 기준으로 수수료가 책정됩니다.<br /> - 윤년일 경우, 366일 기준으로 수수료가 계산됩니다.</td></tr></tbody>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 4,
+                "date": "2017-04-26",
+                "title": "개인채권 예치금 계좌 출금수수료 월 2회 면제",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "개인채권 예치금 계좌에서 예치금을 출금하실 경우, 500원의 이체 수수료가 발생합니다. 단, 월 2회에 한해 이체수수료 면제 혜택을 지원해드립니다. 전북은행 및 광주은행을 이용하실 경우에는 이체수수료 없이 출금하실 수 있습니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 3,
+                "date": "2017-04-26",
+                "title": "투자신청 시 성명 및 동의여부 입력",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "2017년 2월 29일부터 금융위원회의 P2P 가이드라인에 따라 모든 투자상품에 투자위험을 고지하고, 성명 및 동의여부를 직접 기재하는 내용이 의무화되었습니다.<br />피플펀드는 금융당국의 가이드라인에 따라 해당 내용을 반영하였으며 현재는 모든 투자상품의 투자 완료 직전에 해당 내용을 고지하고 있습니다.<br />금융당국의 가이드라인 조치에 따라 고객님께 다소 불편을 드린 점 양해 부탁드립니다."
+                    },
+                    {
+                        "type": "p",
+                        "text": "관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 2,
+                "date": "2017-04-26",
+                "title": "디브릿지&디맨션 담보채권 투자고객 리워드 안내",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "'디브릿지&디맨션 담보채권'의 투자리워드는 아래와 같은 방법으로 사용하실 수 있습니다."
+                    },
+                    {
+                        "type": "table",
+                        "text": "<table><thead><tr><th colspan=\"2\">디브릿지&디맨션 담보채권 투자 리워드 사용 안내</th></tr></thead><tbody><tr><th>이용 장소</th><td> - 디브릿지 (서울 강남구 선릉로152길 21)<br /> - 디맨션 3층 컬러애비뉴 (서울 강남구 봉은사로 223)</td></tr><tr><th>이용 방법</th><td> - 현장에서 이름 및 리워드 코드(휴대폰 뒤 4자리)를 확인하시면, 리워드 사용을 안내 받으실 수 있습니다.</td></tr><tr><th>유의 사항</th><td> - '피플펀드x디브릿지 파티'에 대한 안내는 문자 메시지를 통해 개별적으로 안내해드리겠습니다.<br /> - 디브릿지 및 디맨션 테이블 사전 예약은 아래 영업 장소를 통해 예약 부탁드립니다.<br />&nbsp;: 디브릿지 (02-549-2996), 디맨션 (02-6177-5250)<br /> - 주말에는 테이블 예약이 조기 마감될 수 있으니 주의 해주시기 바랍니다.<br /> - 디스타는 리워드 이용 장소에서 제외되니 양해 부탁드립니다.</td></tr></tbody></table>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "id": 1,
+                "date": "2017-04-26",
+                "title": "투자자 상한 기준(05.29부터 실시)",
+                "contents": [
+                    {
+                        "type": "p",
+                        "text": "2017년 5월 29일부터 금융위원회의 P2P 가이드라인에 따라 투자 금액이 제한됩니다.<br />투자자 보호를 위하여 투자 전문성 및 위험 감수 능력에 따라 아래와 같이 차등적으로 적용됩니다."
+                    },
+                    {
+                        "type": "table",
+                        "text": "<thead><tr><th colspan=\"2\">P2P 투자 가이드라인 (1개 P2P 업체 기준)</th></tr></thead><tbody><tr><th rowspan=\"2\">개인투자자</th><td>P2P 업체별 *총 1천만원, 동일 차입자별 5백만원으로 제한<br />(*현재 투자중인 금액 기준이며, 상환된 금액은 재투자 가능합니다.)</td></tr><tr><td>소득요건*에 충족하는 개인투자자는 총 4천만원, 동일 차입자별 2천만원으로 제한<br />(*이자 배당소득 2천만원 초과 또는 사업, 근로소득 1억원 초과)</td></tr><tr><th>법인투자자 및 전문투자자</th><td>투자 한도 없음</td></tr><tr><th>유의 사항</th><td>투자 상한 기준은 2017년 5월 29일부터 적용되며, 기존 투자금 및 유예기간 동안의 투자금은 적용을 받지 않습니다.</td></tr></tbody>"
+                    },
+                    {
+                        "type": "p",
+                        "text": "관련 문의사항은 피플펀드 CS팀으로 편하게 연락주시기 바랍니다.<br />피플펀드 CS : 02-6212-0700<br /><br />감사합니다.<br />피플펀드 드림"
+                    }
+                ]
+            }
+        ]
+    },
+    "success_return_url": "",
+    "failure_return_url": ""
+}

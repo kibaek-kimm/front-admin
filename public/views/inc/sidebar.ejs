@@ -1,0 +1,57 @@
+<nav id="sidebar">
+    <div class="sidebar-header">
+        <h3>피플펀드<br/>프론트어드민</h3>
+    </div>
+
+    <ul class="list-unstyled components">
+        <li class="<%= path.match(/^\/board/) ? 'active' : '' %>">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">게시판 관리</a>
+            <ul class="collapse list-unstyled<%= path.match(/^\/board/) ? ' show' : '' %>" id="homeSubmenu">
+                <li class="<%= path === '/boards/notice' ? 'active' : ''  %>">
+                    <a href="/boards/notice">공지사항</a>
+                </li>
+                <li class="<%= path === '/boards/recruit' ? 'active' : ''  %>">
+                    <a href="/boards/recruit">채용</a>
+                </li>
+                <li class="<%= path === '/boards/faq' ? 'active' : ''  %>">
+                    <a href="/boards/faq">FAQ</a>
+                </li>
+                <li class="<%= path === '/boards/people' ? 'active' : ''  %>">
+                    <a href="/boards/people">피플펀드 소개</a>
+                </li>
+            </ul>
+        </li>
+        <li class="<%= path === '/showcase' ? 'active' : ''  %>">
+            <a href="/showcase">딜 페이지 관리</a>
+        </li>
+        <!-- <li>
+            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                    <a href="#">Page 1</a>
+                </li>
+                <li>
+                    <a href="#">Page 2</a>
+                </li>
+                <li>
+                    <a href="#">Page 3</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Portfolio</a>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+        </li> -->
+    </ul>
+    <!--
+    <ul class="list-unstyled CTAs">
+        <li>
+            <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+        </li>
+        <li>
+            <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+        </li>
+    </ul> -->
+</nav>
