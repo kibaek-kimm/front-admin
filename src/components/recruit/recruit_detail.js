@@ -166,7 +166,8 @@ class RecruitDetail extends Component {
                                 config={{
                                     height: '480px',
                                     plugins: 'autolink link image lists print preview table lists',
-                                    toolbar: 'undo redo | bold italic | alignleft aligncenter alignright | numlist bullist | table'
+                                    toolbar: 'undo redo | style-h1 style-h2 style-h3 link bold | alignleft aligncenter alignright | numlist bullist | table',
+                                    selection_toolbar: 'bold italic | h2 h3 | blockquote quicklink'
                                 }}
                                 onChange={this.handleEditorChange}
                             />

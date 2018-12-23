@@ -34,8 +34,6 @@ class PeopleList extends React.Component{
     }
 
     getArticle() {
-        console.log(`/api/people?limit=${this.state.listLimit}&offset=${this.state.listOffset}`);
-        
         fetch(`/api/people?limit=${this.state.listLimit}&offset=${this.state.listOffset}`, {
             method: 'GET',
             headers : {

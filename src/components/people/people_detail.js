@@ -108,8 +108,6 @@ class PeopleDetail extends Component {
             return false;
         }
 
-        
-
         var options = {
             method: 'PUT',
             body: JSON.stringify({

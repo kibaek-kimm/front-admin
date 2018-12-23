@@ -3,11 +3,11 @@ const GoogleStrategy = require( 'passport-google-oauth20' ).Strategy;
 const session = require('express-session')
 
 passport.serializeUser(function(user, done) {
-    console.log('serializeUser : ',user);    
+    console.log('serializeUser ');    
     done(null, user);
 });
 passport.deserializeUser(function(obj, done) {
-    console.log('deserializeUser : ',user);    
+    console.log('deserializeUser : ');    
     done(null, obj);
 });
 
@@ -17,6 +17,7 @@ passport.use(new GoogleStrategy(
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
         callbackURL: 'http://localhost:8080/auth/google/callback'
     }, function(accessToken, refreshToken, profile, done) {
+
         console.log('accessToken : ',accessToken);
         console.log('\n');
         console.log('refreshToken : ',refreshToken);
@@ -47,7 +48,7 @@ module.exports = function(app){
         failureRedirect: '/login'
     }), function(req, res) {
         console.log('/auth/google/callback')
-        console.log(res)
+        // console.log(res)
         //jwt토큰 발행
         res.redirect('/success'); 
     });

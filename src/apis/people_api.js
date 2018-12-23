@@ -15,17 +15,26 @@ module.exports = function(app){
      *      - 추후 프론트 공지사항 타입 + 날짜 기준으로 정렬
      */
     app.get(`/api/people`, function(req, res, next){
-        if (!peopleData) {
-            peopleData = utils.getJson(utils.APP_PATH + '/testfile/team-list.json');
-        }
-
         var offset = req.query.offset ? req.query.offset : 0;
         var limit = req.query.limit ? req.query.limit : 10;
 
-        return res.send({
-            list: peopleData.data.list.slice(offset, Number(offset) + Number(limit)),
-            total_length: peopleData.data.list.length
-        });
+        if (!peopleData) {
+            // peopleData = utils.getJson(utils.APP_PATH + '/testfile/team-list.json');
+            // s3에서 조회후 콜백으로 아래내용 호출, 타임아웃이면 에러(10초 제한)
+            utils.getDataFromS3('test-aws-sdk-kkb', 'team-list.json', data => {
+                peopleData = JSON.parse(data.Body);
+
+                return res.send({
+                    list: peopleData.data.list.slice(offset, Number(offset) + Number(limit)),
+                    total_length: peopleData.data.list.length
+                });
+            });
+        } else {
+            return res.send({
+                list: peopleData.data.list.slice(offset, Number(offset) + Number(limit)),
+                total_length: peopleData.data.list.length
+            });
+        }
     });
 
     /**
@@ -71,11 +80,11 @@ module.exports = function(app){
             var newData = Object.assign(peopleData.data.list[index], objData);
             peopleData.data.list[index] = newData;
 
-            utils.writeJson('/testfile/team-list.json', peopleData);
-
-            res.status(200).send({
-               error: 0,
-               message: '정상적으로 수정 되었습니다,' 
+            utils.uploadDataToS3('test-aws-sdk-kkb', 'team-list.json', peopleData, data => {
+                res.status(200).send({
+                    error: 0,
+                    message: '정상적으로 수정 되었습니다.' 
+                 });
             });
         } else {
             res.status(400).send({

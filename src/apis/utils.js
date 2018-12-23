@@ -1,10 +1,18 @@
 var path = require('path');
 var fs = require('fs');
 var AWS = require('aws-sdk');
+var config = new AWS.Config();
 
+AWS.config.update({
+    "accessKeyId": process.env.AWS_ACCESS_KEY_ID,
+    "secretAccessKey": process.env.AWS_SECRET_ACCESS_KEY,
+    "region": process.env.AWS_REGION
+});
 console.log(process.env.DIRNAME);
+
 var appPath = path.join(process.env.DIRNAME, 'public');
 var s3 = new AWS.S3();
+var rootBucket = 'test-aws-sdk-kkb';
 
 
 module.exports = {
@@ -30,8 +38,10 @@ module.exports = {
         };
         
         s3.getObject(params, function(err, data) {
+            if (err) return err;
+
             if (_callback && typeof _callback === 'function') {
-                _callback.call(this, err, data);
+                _callback.call(this, data);
             }
         });
     },
@@ -40,7 +50,7 @@ module.exports = {
         var params = {
             Bucket: _bucket, 
             Key: _fileName, 
-            ACL: 'public-read',
+            // ACL: 'public-read-write',
             ContentEncoding: 'application/json',
             Body: Buffer.from(JSON.stringify(_data))
         };

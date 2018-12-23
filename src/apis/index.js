@@ -19,8 +19,14 @@ module.exports = function(app){
     authApi(app);
 
     app.get('/api/s3test', (req, res) => {
+        const bucket = req.query.bucket ? req.query.bucket : 'test-aws-sdk-kkb';
+        const key = req.query.key;
 
-        utils.getDataFromS3("pfhomepagefilestest/files/main", "test.json", function(err, data) {
+        if (!key) {
+            res.status(400).send('파일명은 필수입니다.');
+        }
+
+        utils.getDataFromS3(bucket, key, function(err, data) {
             if (err){
                 console.log(err, err.stack); // an error occurred
                 res.status(400).send(err);
@@ -29,45 +35,36 @@ module.exports = function(app){
                 res.status(200).send(data.Body);
             }
         });
-
-        // s3.getObject(params, function(err, data) {
-        //     if (_callback && typeof _callback === 'function') {
-        //         _callback.call(this, err, data);
-        //     }
-        // });
-        
     });
 
     app.get('/api/s3uploadtest', (req, res) => {
-        utils.uploadDataToS3("pfhomepagefilestest/files/main", "test.json", {
-            name: "KIBAEK",
-            age: 100
+        utils.uploadDataToS3("test-aws-sdk-kkb", "test.json", {
+            name: "TEST",
+            age: 150
         }, function(err, data) {
             if (err){
-                console.log(err, err.stack); // an error occurred
+                //console.log(err, err.stack); // an error occurred
                 res.status(400).send(err);
             } else {
-                console.log(data);           // successful response   
-                res.status(200).send(data.Body);
+                //console.log(data);           // successful response   
+                res.status(200).send(data);
             }
         });
     });
 
     app.get('/api/s3list', (req, res) => {
         var params = { 
-            Bucket: 'pfhomepagefiles',
+            Bucket: 'test-aws-sdk-kkb',
             Delimiter: '/'
         };
            
         utils.AWS_OBJECT.S3.listObjects(params, (err, data) => {
-
             if(err) {
                 res.send(err);
                 throw err;
             } 
 
             res.send(data);
-            console.log(data);
         });
     });
 

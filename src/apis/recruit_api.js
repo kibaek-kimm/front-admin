@@ -15,17 +15,24 @@ module.exports = function(app){
      *      - 추후 프론트 공지사항 타입 + 날짜 기준으로 정렬
      */
     app.get(`/api/recruit`, function(req, res, next){
-        if (!recruitData) {
-            recruitData = utils.getJson(utils.APP_PATH + '/testfile/recruit-list.json');
-        }
-
         var offset = req.query.offset ? req.query.offset : 0;
         var limit = req.query.limit ? req.query.limit : 10;
 
-        return res.send({
-            list: recruitData.data.list.slice(offset, Number(offset) + Number(limit)),
-            total_length: recruitData.data.list.length
-        });
+        if (!recruitData) {
+            utils.getDataFromS3('test-aws-sdk-kkb', 'recruit-list.json', data => {
+                recruitData = JSON.parse(data.Body);
+
+                return res.send({
+                    list: recruitData.data.list.slice(offset, Number(offset) + Number(limit)),
+                    total_length: recruitData.data.list.length
+                });
+            });
+        } else {
+            return res.send({
+                list: recruitData.data.list.slice(offset, Number(offset) + Number(limit)),
+                total_length: recruitData.data.list.length
+            });
+        }
     });
 
     /**
@@ -68,11 +75,14 @@ module.exports = function(app){
             var newData = Object.assign(recruitData.data.list[index], objData);
             recruitData.data.list[index] = newData;
 
-            utils.writeJson('/testfile/recruit-list.json', recruitData);
+            console.log(recruitData);
+            
 
-            res.status(200).send({
-               error: 0,
-               message: '정상적으로 수정 되었습니다,' 
+            utils.uploadDataToS3('test-aws-sdk-kkb', 'recruit-list.json', recruitData, data => {
+                res.status(200).send({
+                    error: 0,
+                    message: '정상적으로 수정 되었습니다.' 
+                 });
             });
         } else {
             res.status(400).send({
