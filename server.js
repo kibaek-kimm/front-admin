@@ -35,7 +35,7 @@ app.get('/login', function(req, res){
 });
 
 app.get('/success', function(req, res){
-    console.log(req.user)
+    // console.log(req.user)
 	res.render('loginSuccess');
 });
 

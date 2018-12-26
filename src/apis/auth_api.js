@@ -22,13 +22,14 @@ passport.use(new GoogleStrategy(
         console.log('\n');
         console.log('refreshToken : ',refreshToken);
         console.log('\n');
-        // console.log('profile : ',profile);
-        // console.log('\n');
+        console.log('profile : ',profile);
 
         process.nextTick(function() {
             console.log(11111);
             
             user = profile;
+            // console.log(profile);
+
             return done(null, user);
         });
     }
@@ -41,7 +42,8 @@ module.exports = function(app){
     app.use(passport.session());
 
     app.get('/auth/google', passport.authenticate('google', {
-        scope: ['profile']
+        scope: ['profile', 'email'],
+        hostedDomain: 'peoplefund.co.kr'
     }));
     
     app.get('/auth/google/callback', passport.authenticate( 'google', {
