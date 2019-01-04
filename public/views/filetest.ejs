@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <% include ./inc/meta %>
+        <title>로그인테스트</title>
+    </head>
+    <body>
+        파일업로드 테스트
+        <form action="javascript:;" method="post" id="test-form">
+            <input type="file" name="test" id="test-file">
+            <button class="btn btn-primary" type="submit" >업로드</button>
+        </form>
+
+        <img src="https://s3.ap-northeast-2.amazonaws.com/test-aws-sdk-kkb/icon_arrow_down_white@2x.png" alt="">
+
+        <script>
+            $('.btn-primary').on('click', function() {
+                var form = document.getElementById('test-form');
+                var formData = new FormData();
+                formData.append('test', document.getElementById('test-file').files[0]);
+                console.log(formData);
+                
+
+                $.ajax({
+                    method: 'post',
+                    url: '/api/upload_file',
+                    processData: false,
+                    contentType: false,
+                    data: formData,
+                    success: function(result) {
+                        console.log(result);
+                    },
+                    error: function(err) {
+                        console.log(err);
+                    }
+                })
+                
+            });
+        </script>
+        
+    </body>
+</html>
+

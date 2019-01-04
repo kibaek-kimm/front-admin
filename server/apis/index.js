@@ -1,6 +1,6 @@
 var path = require('path');
 var fs = require('fs');
-var utils = require('./utils');
+var utils = require('../utils');
 
 /**
  * API Modules import

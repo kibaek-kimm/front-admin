@@ -1,4 +1,4 @@
-var utils = require('./utils');
+var utils = require('../utils');
 
 module.exports = function(app){
     var noticeData;
@@ -40,6 +40,7 @@ module.exports = function(app){
             noticeData = utils.getJson(utils.APP_PATH + '/testfile/notice-list.json');
         }
 
+        // lodash 로 대체예정
         var resultData = utils.getDataByKey(noticeData.data.list, 'id', Number(req.params.id));
 
         if (resultData && resultData.data) {

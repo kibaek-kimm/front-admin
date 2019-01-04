@@ -1,6 +1,6 @@
 var path = require('path');
 var fs = require('fs');
-var utils = require('./utils');
+var utils = require('../utils');
 var appPath = path.join(process.env.DIRNAME, 'public');
 
 module.exports = function(app){
@@ -55,5 +55,35 @@ module.exports = function(app){
 
         return res.send(resultData);
     });
+
+    app.get('/file_test', function(req, res) {
+        res.render('filetest');
+    });
+
+    app.post('/api/upload_file', function(req, res) {
+        console.log(req.files.test);
+        if (!req.files.test) {
+            res.status(403).send('파일을 올려주세요');
+        }
+
+        utils.uploadDataToS3('test-aws-sdk-kkb', req.files.test.name, req.files.test.data, data => {
+            res.status(200).send({
+                error: 0,
+                message: '정상적으로 업로드 되었습니다.' 
+             });
+        });
+    });
+
+
+    app.get('/api/get_file', function(req, res) {
+
+
+        utils.getDataFromS3('test-aws-sdk-kkb', 'icon_arrow_down_white@2x.png', data => {
+            console.log(data.Body);
+            var fileContents = Buffer.from(data.Body, "base64");
+            console.log(fileContents);
+            return res.send(fileContents);
+        });
+    })
 
 }

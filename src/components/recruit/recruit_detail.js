@@ -165,7 +165,13 @@ class RecruitDetail extends Component {
                                 content={typeof this.state.jsonData.contents === 'string' ? this.state.jsonData.contents : '내용을 입력하세요.'}
                                 config={{
                                     height: '480px',
-                                    plugins: 'autolink link image lists print preview table lists',
+                                    // plugins: 'autolink link image upload lists print preview table lists',
+                                    plugins: [
+                                        'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+                                        'searchreplace wordcount visualblocks visualchars code fullscreen',
+                                        'insertdatetime media nonbreaking save table contextmenu directionality',
+                                        'emoticons template paste textcolor colorpicker textpattern imagetools'
+                                    ],
                                     toolbar: 'undo redo | style-h1 style-h2 style-h3 link bold | alignleft aligncenter alignright | numlist bullist | table',
                                     selection_toolbar: 'bold italic | h2 h3 | blockquote quicklink'
                                 }}

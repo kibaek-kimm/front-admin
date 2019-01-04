@@ -4,6 +4,7 @@ var PORT = process.env.PORT || 8080;
 var path = require('path');
 var bodyParser = require('body-parser');
 var express = require('express');
+var fileUpload = require('express-fileupload');
 var app = express();
 process.env.DIRNAME = path.dirname(require.main.filename);
 
@@ -11,7 +12,7 @@ var webpack = require('webpack');
 var webpackConfig = require('./webpack.config.js');
 var middleware = require('webpack-dev-middleware');
 var compiler = webpack(webpackConfig);
-var apis = require('./src/apis/index');
+var apis = require('./server/apis/index');
 
 app.set('views', path.join(__dirname, 'public/views'));
 app.set('view engine', 'ejs');
@@ -24,6 +25,19 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
+app.use(fileUpload());
+
+/*
+API 권한체크
+app.use(function(req, res, next) {
+    if (authenticate success) {
+        next()
+    } else {
+        res.status(403).send('권한이 없습니다.');
+    }
+});
+*/
+
 /**
  * API 구현체를 모듈로 따로 분리하여 관리합니다.
  * fileApi : Json 읽기/쓰기
@@ -35,7 +49,6 @@ app.get('/login', function(req, res){
 });
 
 app.get('/success', function(req, res){
-    // console.log(req.user)
 	res.render('loginSuccess');
 });
 

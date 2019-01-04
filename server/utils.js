@@ -8,12 +8,9 @@ AWS.config.update({
     "secretAccessKey": process.env.AWS_SECRET_ACCESS_KEY,
     "region": process.env.AWS_REGION
 });
-console.log(process.env.DIRNAME);
 
 var appPath = path.join(process.env.DIRNAME, 'public');
 var s3 = new AWS.S3();
-var rootBucket = 'test-aws-sdk-kkb';
-
 
 module.exports = {
     APP_PATH: appPath,
@@ -94,8 +91,6 @@ module.exports = {
             console.log('ERROR: key는 필수값입니다.');
             return false;
         }
-
-        console.log(_value);
 
         if (!_value) {
             console.log('ERROR: value는 필수값입니다.');
