@@ -4,7 +4,6 @@ var PORT = process.env.PORT || 8080;
 var path = require('path');
 var bodyParser = require('body-parser');
 var express = require('express');
-var fileUpload = require('express-fileupload');
 var app = express();
 process.env.DIRNAME = path.dirname(require.main.filename);
 
@@ -24,8 +23,6 @@ app.use(bodyParser.json() );
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-
-app.use(fileUpload());
 
 /*
 API 권한체크

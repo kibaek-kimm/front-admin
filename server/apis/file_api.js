@@ -1,5 +1,7 @@
 var path = require('path');
 var fs = require('fs');
+var formidable = require('formidable');
+
 var utils = require('../utils');
 var appPath = path.join(process.env.DIRNAME, 'public');
 
@@ -61,21 +63,81 @@ module.exports = function(app){
     });
 
     app.post('/api/upload_file', function(req, res) {
-        console.log(req.files.test);
-        if (!req.files.test) {
-            res.status(403).send('파일을 올려주세요');
-        }
+        // console.log(req.files.test);
+        // if (!req.files.test) {
+        //     res.status(403).send('파일을 올려주세요');
+        // }
 
-        utils.uploadDataToS3('test-aws-sdk-kkb', req.files.test.name, req.files.test.data, data => {
-            res.status(200).send({
-                error: 0,
-                message: '정상적으로 업로드 되었습니다.' 
-             });
+        // utils.uploadDataToS3('test-aws-sdk-kkb', req.files.test.name, req.files.test.data, data => {
+        //     res.status(200).send({
+        //         error: 0,
+        //         message: '정상적으로 업로드 되었습니다.' 
+        //      });
+        // });
+
+        var form = form = new formidable.IncomingForm({
+            encoding: 'utf-8',
+            multiples: true,
+            keepExtensions: false //확장자 제거
+        });
+
+        form.parse(req, function (err, fields, files) {
+
+        });
+
+        form.on('error', function (err) {
+            console.log('error', err);
+            
+            callback(err, null);
+        });
+        form.on('end', function () {
+            console.log('end');
+            console.log(this);
+
+            utils.uploadDataToS3('test-aws-sdk-kkb', this.openedFiles[0].name, fs.createReadStream(this.openedFiles[0].path), data => {
+                res.status(200).send({
+                    error: 0,
+                    message: '정상적으로 업로드 되었습니다.' 
+                });
+            });
+            
+            // callback(null, this.openedFiles);
+        });
+        form.on('aborted', function () {
+            console.log('aborted');
+
+            // callback('form.on(aborted)', null);
         });
     });
 
 
     app.get('/api/get_file', function(req, res) {
+
+        // var form = form = new formidable.IncomingForm({
+        //     encoding: 'utf-8',
+        //     multiples: true,
+        //     keepExtensions: false //확장자 제거
+        // });
+
+        // form.parse(function (err, fields, files) {
+
+        // });
+
+        // form.on('error', function (err) {
+        //     console.log('error', err);
+            
+        //     callback(err, null);
+        // });
+        // form.on('end', function () {
+        //     console.log('end');
+
+        //     callback(null, this.openedFiles);
+        // });
+        // form.on('aborted', function () {
+        //     console.log('aborted');
+
+        //     callback('form.on(aborted)', null);
+        // });
 
 
         utils.getDataFromS3('test-aws-sdk-kkb', 'icon_arrow_down_white@2x.png', data => {
