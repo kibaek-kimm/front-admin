@@ -1,14 +1,14 @@
 const passport = require('passport');
 const GoogleStrategy = require( 'passport-google-oauth20' ).Strategy;
-const session = require('express-session')
+const session = require('express-session');
 
 passport.serializeUser(function(user, done) {
-    console.log('serializeUser ');    
+    console.log('\x1b[31m%s\x1b[0m', 'passport.serializeUser ');
     done(null, user);
 });
-passport.deserializeUser(function(obj, done) {
-    console.log('deserializeUser : ');    
-    done(null, obj);
+passport.deserializeUser(function(user, done) {
+    console.log('\x1b[31m%s\x1b[0m', 'passport.deserializeUser ');
+    done(null, user);
 });
 
 passport.use(new GoogleStrategy(
@@ -18,15 +18,12 @@ passport.use(new GoogleStrategy(
         callbackURL: 'http://localhost:8080/auth/google/callback'
     }, function(accessToken, refreshToken, profile, done) {
 
+        console.log('\x1b[31m%s\x1b[0m', 'Passport user GoogleStrategy callback');
         console.log('accessToken : ',accessToken);
-        console.log('\n');
         console.log('refreshToken : ',refreshToken);
-        console.log('\n');
-        console.log('profile : ',profile);
+        // console.log('profile : ',profile);
 
         process.nextTick(function() {
-            console.log(11111);
-            
             user = profile;
             // console.log(profile);
 
@@ -49,9 +46,10 @@ module.exports = function(app){
     app.get('/auth/google/callback', passport.authenticate( 'google', {
         failureRedirect: '/login'
     }), function(req, res) {
+        console.log('\x1b[31m%s\x1b[0m', '/auth/google/callback ');
         console.log('/auth/google/callback')
         // console.log(res)
-        //jwt토큰 발행
-        res.redirect('/success'); 
+    
+        res.redirect('/success');
     });
 }

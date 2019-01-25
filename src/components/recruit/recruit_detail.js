@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { changeLoadingStatus } from '../../actions'
 
-import TinyMCE from 'react-tinymce';
+import { Editor } from '@tinymce/tinymce-react';
 
 class RecruitDetail extends Component {
     constructor(props) {
@@ -161,19 +161,15 @@ class RecruitDetail extends Component {
                         </div>
 
                         <div className="form-group" style={{display : 'block'}}>
-                            <TinyMCE
-                                content={typeof this.state.jsonData.contents === 'string' ? this.state.jsonData.contents : '내용을 입력하세요.'}
-                                config={{
-                                    height: '480px',
-                                    // plugins: 'autolink link image upload lists print preview table lists',
-                                    plugins: [
-                                        'advlist autolink lists link image charmap print preview hr anchor pagebreak',
-                                        'searchreplace wordcount visualblocks visualchars code fullscreen',
-                                        'insertdatetime media nonbreaking save table contextmenu directionality',
-                                        'emoticons template paste textcolor colorpicker textpattern imagetools'
-                                    ],
-                                    toolbar: 'undo redo | style-h1 style-h2 style-h3 link bold | alignleft aligncenter alignright | numlist bullist | table',
-                                    selection_toolbar: 'bold italic | h2 h3 | blockquote quicklink'
+                            <Editor
+                                initialValue={typeof this.state.jsonData.contents === 'string' ? this.state.jsonData.contents : '내용을 입력하세요.'}
+                                init={{
+                                    height: "500",
+                                    plugins: 'code',
+                                    toolbar: 'undo redo | image code',
+                                    onChange: (e) => {
+                                        console.log(e);
+                                    }
                                 }}
                                 onChange={this.handleEditorChange}
                             />

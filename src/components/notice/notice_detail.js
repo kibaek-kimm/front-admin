@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { changeLoadingStatus } from '../../actions/index'
 
-import TinyMCE from 'react-tinymce';
+import { Editor } from '@tinymce/tinymce-react';
 
 class NoticeDetail extends Component {
     constructor(props) {
@@ -161,11 +161,11 @@ class NoticeDetail extends Component {
                         </div>
 
                         <div className="form-group" style={{display : 'block'}}>
-                            <TinyMCE
+                            <Editor
                                 content={typeof this.state.jsonData.contents === 'string' ? this.state.jsonData.contents : '내용을 입력하세요.'}
                                 config={{
                                     height: '480px',
-                                    plugins: 'autolink link image lists print preview table lists',
+                                    plugins: 'autolink link lists print preview table lists',
                                     toolbar: 'undo redo | bold italic | alignleft aligncenter alignright | numlist bullist | table'
                                 }}
                                 onChange={this.handleEditorChange}

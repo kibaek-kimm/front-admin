@@ -3,8 +3,6 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { changeLoadingStatus } from '../../actions'
 
-import TinyMCE from 'react-tinymce';
-
 class PeopleDetail extends Component {
     constructor(props) {
         super(props);

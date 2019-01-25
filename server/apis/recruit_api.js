@@ -43,18 +43,31 @@ module.exports = function(app){
      */
     app.get(`/api/recruit/:id`, function(req, res, next){
         if (!recruitData) {
-            recruitData = utils.getJson(utils.APP_PATH + '/testfile/recruit-list.json');
-        }
+            utils.getDataFromS3('test-aws-sdk-kkb', 'recruit-list.json', data => {
+                recruitData = JSON.parse(data.Body);
 
-        var resultData = utils.getDataByKey(recruitData.data.list, 'id', Number(req.params.id));
+                var resultData = utils.getDataByKey(recruitData.data.list, 'id', Number(req.params.id));
 
-        if (resultData && resultData.data) {
-            return res.send(resultData.data);
-        } else {
-            return res.status(400).send({
-                error: 1,
-                message: `id: ${req.params.id}에 해당되는 데이터가 없습니다.`
+                if (resultData && resultData.data) {
+                    return res.send(resultData.data);
+                } else {
+                    return res.status(400).send({
+                        error: 1,
+                        message: `id: ${req.params.id}에 해당되는 데이터가 없습니다.`
+                    });
+                }            
             });
+        } else {
+            var resultData = utils.getDataByKey(recruitData.data.list, 'id', Number(req.params.id));
+
+            if (resultData && resultData.data) {
+                return res.send(resultData.data);
+            } else {
+                return res.status(400).send({
+                    error: 1,
+                    message: `id: ${req.params.id}에 해당되는 데이터가 없습니다.`
+                });
+            }
         }
     });
 
