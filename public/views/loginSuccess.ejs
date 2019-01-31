@@ -6,6 +6,27 @@
     </head>
     <body>
         로그인 성공    
+
+
+        <script>
+            $.ajax({
+                method: 'get',
+                url: '/api/get_jwt',
+                success: function(_response) {
+                    console.log('success');
+                    if (!_response.token) {
+                        //로그인 안함
+                    } else {
+                        //막 로그인 함
+                        window.localStorage.setItem('token', _response.token)
+                    }
+                },
+                error: function(_err) {
+                    console.log('err');
+                    console.log(_err);
+                }
+            });
+        </script>
     </body>
 </html>
 

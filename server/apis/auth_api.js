@@ -2,6 +2,7 @@ const passport = require('passport');
 const GoogleStrategy = require( 'passport-google-oauth20' ).Strategy;
 const session = require('express-session');
 const jwtUtil = require('../jwt');
+const jwt = require('jsonwebtoken');
 var redirectUrl = '/';
 
 passport.serializeUser(function(user, done) {
@@ -57,21 +58,43 @@ module.exports = function(app){
         res.redirect('/success');
     });
 
+    app.get('/api/get_jwt', function(req, res) {
+        var token = null;
+        console.log(req.session);
+        if (req.session.passport && req.session.passport.token) {
+            token = req.session.passport.token;
+        }
+
+        res.send({
+            token: token
+        });
+    });
+
     app.get('/login', function(req, res){
         if (req.query.r) {
             redirectUrl = req.query.r;
         }
-    	res.render('loginTest');
+        console.log(req.session);
+        
+    	res.render('login');
     });
 
     app.get('/success', function(req, res){
-        const userInfo = req.session.passport.user;
+        var userInfo = req.session.passport.user;
 
         jwtUtil.sign({
             'name': userInfo.displayName,
             'email': userInfo.email
+        },
+        {},
+        function(token) {
+            console.log('token : ', token);
+            res.render('loginSuccess');
         });
+
         //jwt토큰 발행
-    	res.redirect(redirectUrl);
+        // res.redirect(redirectUrl);
+        // res.redirect('/success');
+        
     });
 }

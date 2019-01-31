@@ -1,7 +1,7 @@
 const jwt  = require('jsonwebtoken');
 
 module.exports = {
-    sign: (_payload, _options) => {
+    sign: (_payload, _options, _callback) => {
         /*
         [Payload : Claims]
         Reserved claims : 이미 예약된 Claim. 필수는 아니지만 사용하길 권장. key 는 모두 3자리 String이다.
@@ -31,18 +31,23 @@ module.exports = {
             return false;
         }
 
-        const options = {
+        var options = {
             'issuer':  'peoplefund',
-            'algorithm':  'RS256',
+            'algorithm':  'HS256',
             'expiresIn': '10d'
         };
 
-        Object.assign(options, {}, _options);
+        options = Object.assign(options, {}, _options);
+        console.log('secret : ',process.env.AUTH_PRIVATE_KEY);
+        
 
         jwt.sign(_payload, process.env.AUTH_PRIVATE_KEY, options, (err, token) => {
             console.log(token);
             console.log(err);
             console.log('jwt published success');
+
+            _callback(token);
+            return token;
         });
     },
     verify: (_token, _options) => {
@@ -52,11 +57,11 @@ module.exports = {
             subject:  _options.subject,
             audience:  _options.audience,
             expiresIn:  '30d',
-            algorithm:  ['RS256']
+            algorithm:  ['HS256']
         };
 
         try {
-            return jwt.verify(_token, process.env.AUTH_PUBLIC_KEY, _options);
+            return jwt.verify(_token, process.env.AUTH_PRIVATE_KEY, _options);
         } catch (err) {
             return false;
         }
