@@ -14,29 +14,47 @@
 
         $('.btn-primary').on('click', function(e) {
             if (storage.getItem('token')) {
-                alert('localStorage에 이미 토큰 존재함');
                 console.log(storage.getItem('token'));
-            } else {
+
                 $.ajax({
-                    method: 'get',
-                    url: '/api/get_jwt',
+                    method: 'post',
+                    url: '/api/verify_jwt',
+                    headers: {
+                        'Authorization': `Bearer ${storage.getItem('token')}`
+                    },
                     success: function(_response) {
                         console.log('success');
                         console.log(_response);
-
-                        if (!_response.token) {
-                            //로그인 안함
-                            window.location = '/auth/google';
-                        } else {
-                            //막 로그인 함
-                            window.localStorage.setItem('token', _response.token);
-                        }
+                        window.location = '/';
                     },
                     error: function(_err) {
-                        console.log('err');
-                        console.log(_err);
+                        storage.removeItem('token');
+                        window.location = '/auth/google';
                     }
                 });
+            } else {
+                // $.ajax({
+                //     method: 'get',
+                //     url: '/api/get_jwt',
+                //     success: function(_response) {
+                //         console.log('success');
+                //         console.log(_response);
+
+                //         if (!_response.token) {
+                //             //로그인 안함
+                //             window.location = '/auth/google';
+                //         } else {
+                //             //막 로그인 함
+                //             window.localStorage.setItem('token', _response.token);
+                //         }
+                //     },
+                //     error: function(_err) {
+                //         console.log('err');
+                //         console.log(_err);
+                //     }
+                // });
+
+                window.location = '/auth/google';
             }
             // 
         })

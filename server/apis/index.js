@@ -1,17 +1,66 @@
-var path = require('path');
-var fs = require('fs');
-var utils = require('../utils');
+var path    =  require('path');
+var fs      = require('fs');
+var utils   = require('../utils');
+var jwtUtil = require('../jwt');
 
 /**
  * API Modules import
  */
-var fileApi = require('./file_api');
-var noticeApi = require('./notice_api');
-var recruitApi = require('./recruit_api');
-var peopleApi = require('./people_api');
-var authApi = require('./auth_api');
+var fileApi     = require('./file_api');
+var noticeApi   = require('./notice_api');
+var recruitApi  = require('./recruit_api');
+var peopleApi   = require('./people_api');
+var authApi     = require('./auth_api');
 
 module.exports = function(app){
+    app.use(function(req, res, next) {
+        if (req.originalUrl.match(/^\/api/) && req.method !== 'GET') {
+            // path가 /api로 시작되고 method가 get이 아니라면 token인증
+            const bearerHeader = req.headers['authorization'];
+
+            if (!bearerHeader) {
+                res.status(403).send({
+                    message: '권한이 없습니다. 로그인 해주세요.',
+                    redirectUrl: '/login'
+                });
+                return;
+            }
+
+            const bearer = bearerHeader.split(' ');
+
+            if (!bearer || bearer.length <= 1) {
+                res.status(403).send({
+                    message: '권한이 없습니다. 로그인 해주세요.',
+                    redirectUrl: '/login'
+                });
+                return;
+            }
+
+            const token = bearer[1];
+            jwtUtil.verify(token, (_decoded, _err) => {
+                console.log('token : ', token);
+                console.log('인증결과 : ', _decoded);
+                console.log('_err : ', _err);
+
+                if (_err) {
+                    res.status(403).send({
+                        status: 403,
+                        error: _err,
+                        message: '권한이 없습니다. 로그인 해주세요.',
+                        redirectUrl: '/login'
+                    });
+                    return;
+                } else {
+                    next();
+                }                    
+            });
+
+        } else {
+            // 아니라면 진행
+            next();
+        }
+    });
+
     fileApi(app);
     noticeApi(app);
     recruitApi(app);

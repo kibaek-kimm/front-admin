@@ -18,7 +18,7 @@ class PeopleDetail extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    componentWillMount() {
+    componentDidMount() {
         if (this.props.match.params && this.props.match.params.id) {
             fetch(`/api/people/${this.props.match.params.id}`, {
                 method: 'GET',
@@ -128,11 +128,16 @@ class PeopleDetail extends Component {
         }, 500);
 
         setTimeout(() => {
-            fetch(`/api/people/${this.state.jsonData.id}`, options)
+
+            callApi(`/api/people/${this.state.jsonData.id}`, options)
             .then(_response => _response.json())
             .then(_data => {
                 if (_data.error) {
                     console.log(_data.message);
+                    console.log(_data);
+                    if (_data.status == 403) {
+                        window.location = `/login/?r=${window.location.pathname + window.location.search}`    
+                    }
                 } else {
                     window.history.back();
                 }

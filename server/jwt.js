@@ -34,10 +34,13 @@ module.exports = {
         var options = {
             'issuer':  'peoplefund',
             'algorithm':  'HS256',
-            'expiresIn': '10d'
+            'expiresIn': '30s'
         };
 
-        options = Object.assign(options, {}, _options);
+        if (_options) {
+            options = Object.assign(options, {}, _options);
+        }
+        
         console.log('secret : ',process.env.AUTH_PRIVATE_KEY);
         
 
@@ -46,22 +49,22 @@ module.exports = {
             console.log(err);
             console.log('jwt published success');
 
-            _callback(token);
-            return token;
+            if (_callback && typeof _callback === 'function') {
+                console.log('in jwt sign function: ', token);
+                _callback.call(null, token);
+            }
         });
     },
-    verify: (_token, _options) => {
-
-        var options = {
-            issuer:  _options.issuer,
-            subject:  _options.subject,
-            audience:  _options.audience,
-            expiresIn:  '30d',
-            algorithm:  ['HS256']
-        };
-
+    verify: (_token, _callback) => {
         try {
-            return jwt.verify(_token, process.env.AUTH_PRIVATE_KEY, _options);
+            return jwt.verify(_token, process.env.AUTH_PRIVATE_KEY, (err, decoded) => {
+                if (err) {
+                    _callback.call(null, null, err);
+                } else {
+                    _callback.call(null, decoded);
+                }
+                
+            });
         } catch (err) {
             return false;
         }
