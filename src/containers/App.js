@@ -25,24 +25,7 @@ import PeopleDetail from './../components/people/people_detail'
 
 class App extends React.Component{
     componentDidMount() {
-        fetch('/api/auth', {
-            headers : {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            }
-        })
-        .then(_response => _response.json())
-        .then(_data => {
-            console.log(_data)
-            if (_data.status !== 200) {
-                window.location = `/login/?r=${window.location.pathname + window.location.search}`
-            } else {
-                this.props.setUser(_data);
-            }
-        })
-        .catch(e => {
-            console.log('error : ',e);
-        });
+        
     }
 
     render() {

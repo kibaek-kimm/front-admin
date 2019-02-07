@@ -1,23 +1,26 @@
+import axios from 'axios';
+
 export const CHANGE_CURRENT_MENU = 'CHANGE_CURRENT_MENU';
 export const CHANGE_LOADING_STATUS = 'CHANGE_LOADING_STATUS';
 export const SET_USER = 'SET_USER';
 
-// export function increment() {
-//     return {
-//         type: INCREMENT
-//     };
-// }
-//
-// export function decrement() {
-//     return {
-//         type: DECREMENT
-//     };
-// }
+export function setUser() {
 
-export function setUser(userInfo) {
-    return {
-        type: SET_USER,
-        userInfo
+    return function(dispatch) {
+        axios.get('/api/auth')
+        .then(_response => {
+            dispatch({
+                type: SET_USER,
+                user: _response.data
+            })
+        })
+        .catch(e => {
+            console.log('error : ', e);
+            dispatch({
+                type: SET_USER,
+                user: null
+            })
+        })
     }
 }
 

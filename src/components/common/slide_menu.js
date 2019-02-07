@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { changeCurrentMenu } from '../../actions'
+import { changeCurrentMenu, setUser } from '../../actions'
 import { Link } from 'react-router-dom';
 
 class SideMenu extends React.Component{
@@ -8,6 +8,13 @@ class SideMenu extends React.Component{
         super(props);
 
         this.handleMenu = this.handleMenu.bind(this);
+    }
+
+    componentDidMount() {
+        this.props.setUser();
+        setTimeout(() => {
+            console.log(this.props);
+        }, 2000);
     }
 
     handleMenu(e, _name, _korName) {
@@ -75,10 +82,9 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        onChangeMenu: (currentMenu, menuTitle) => dispatch(changeCurrentMenu(currentMenu, menuTitle))
+        onChangeMenu: (currentMenu, menuTitle) => dispatch(changeCurrentMenu(currentMenu, menuTitle)),
+        setUser: () => dispatch(setUser())
     }
 };
 
-SideMenu = connect(mapStateToProps, mapDispatchToProps)(SideMenu);
-
-export default SideMenu;
+export default connect(mapStateToProps, mapDispatchToProps)(SideMenu);

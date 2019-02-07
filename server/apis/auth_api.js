@@ -70,7 +70,6 @@ module.exports = function(app){
         {
             const userInfo = req.session.passport.user;
             res.send({
-                status: 200,
                 name: userInfo.displayName,
                 email: userInfo.emails[0].value
             });

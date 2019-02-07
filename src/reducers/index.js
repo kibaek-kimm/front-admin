@@ -32,9 +32,9 @@ const menuInitialState = {
 const user = (state = {}, action) => {
     switch(action.type) {
         case SET_USER:
-            return {
-                user: state
-            };
+            console.log('reducer : ',state);
+            console.log('reducer-action : ',action);
+            return action.user;
             break;
         default:
             return state;
@@ -68,6 +68,7 @@ const isLoading = (state = false, action) => {
 };
 
 const appReducer = combineReducers({
+    user,
     menu,
     isLoading
 });
