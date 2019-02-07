@@ -1,4 +1,4 @@
-import { CHANGE_CURRENT_MENU, CHANGE_LOADING_STATUS } from '../actions';
+import {CHANGE_CURRENT_MENU, CHANGE_LOADING_STATUS, SET_USER} from '../actions';
 import { combineReducers } from 'redux';
 
 const menuInitialState = {
@@ -29,6 +29,18 @@ const menuInitialState = {
     ]
 };
 
+const user = (state = {}, action) => {
+    switch(action.type) {
+        case SET_USER:
+            return {
+                user: state
+            };
+            break;
+        default:
+            return state;
+    }
+};
+
 const menu = (state = menuInitialState, action) => {
     switch(action.type) {
         case CHANGE_CURRENT_MENU:
@@ -53,7 +65,7 @@ const isLoading = (state = false, action) => {
         default:
             return state;
     }
-}
+};
 
 const appReducer = combineReducers({
     menu,

@@ -62,51 +62,28 @@ module.exports = function(app){
         res.redirect('/success');
     });
 
-    app.get('/api/get_jwt', function(req, res) {
-        var token = null;
-        console.log('before clear token: ');
-        console.log('req.session.token: ', req.session.token);
-        if (req.session && req.session.token) {
-            token = req.session.token;
-            req.session.destroy();
-        }
-
-        console.log('clear token: ');
-        console.log('token: ', token);
-
-        res.send({
-            token: token
-        });
-    });
-
-    app.post('/api/verify_jwt', (req, res) => {
-        console.log(req.headers.authorization);
-        if (req.headers.authorization) {
-            const token = req.headers.authorization.split(' ')[1];
-            jwtUtil.verify(token, (decoded, err) => {
-                if (err) {
-                    res.status(403).send({
-                        error: err
-                    });
-                } else {
-                    res.send({
-                        verify: decoded
-                    });
-                }
-                
+    app.get('/api/auth', function(req, res) {
+        if (
+            req.session.passport
+            && req.session.passport.user
+            && req.session.passport.user.emails)
+        {
+            const userInfo = req.session.passport.user;
+            res.send({
+                status: 200,
+                name: userInfo.displayName,
+                email: userInfo.emails[0].value
             });
         } else {
-            res.status(400).send({
-                message: 'token값은 필수입니다.'
-            })
+            res.status(404).send({
+                status: 404,
+                message: '유저 정보가 없습니다.'
+            });
         }
-    });
-
-    app.get('/api/get_sess', function(req, res) {
-        res.send(req.session);
     });
 
     app.get('/login', function(req, res){
+        console.log(req.session);
         if (req.query.r) {
             redirectUrl = req.query.r;
         }
@@ -115,24 +92,9 @@ module.exports = function(app){
     });
 
     app.get('/success', function(req, res){
-        console.log('\n======');
         console.log('\x1b[32m%s\x1b[0m', '[[[[ /success]]]]');
-        console.log('\n');
-
+        console.log(req.session);
         var userInfo = req.session.passport.user;
-
-        jwtUtil.sign({
-            'name': userInfo.displayName,
-            'email': userInfo.email
-        }, null, function(token) {
-            console.log('token : ', token);
-            req.session.token = token;
-            // res.render('loginSuccess');
-            res.redirect(redirectUrl);
-        });
-
-        //jwt토큰 발행
-        // res.redirect('/success');
-        
+        res.redirect(redirectUrl);
     });
 }

@@ -1,5 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Route, Redirect } from 'react-router-dom';
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import { setUser } from '../actions'
 
 /* 공통 컴퍼넌트 */
 import SideMenu from './../components/common/slide_menu'
@@ -20,67 +23,9 @@ import Faq from '../components/faq/faq_list'
 import PeopleList from './../components/people/people_list'
 import PeopleDetail from './../components/people/people_detail'
 
-/**
- * api 호출 시 token을 인증한다.
- * 
- * return Promise
- */
-window.callApi = (_url, _obj, _shouldNotAuthen) => {
-    if (!_url) {
-        new Error('url값은 필수입니다.');
-    }
-
-    if (!_obj || !_obj.headers || !_obj.method) {
-        new Error('api 통신을 위한 최소한의 object값은 필수입니다. (method, headers)');
-    }
-
-    if (!_shouldNotAuthen) {
-        var storage = window['localStorage'];
-        if (!storage.getItem('token')) {
-            new Error('권한이 없습니다. 로그인 해주세요.');
-        }
-
-        _obj.headers = Object.assign(_obj.headers, {}, {
-            'Authorization': `Bearer ${storage.getItem('token')}`
-        });
-    }
-
-    return fetch(_url, _obj);
-};
-
 class App extends React.Component{
     componentDidMount() {
-        var storage = window['localStorage'];
-
-        if (storage.getItem('token')) { 
-            console.log('token 이미 존재함');
-
-
-            callApi('/api/verify_jwt', {
-                method: 'POST',
-                headers : {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify({
-                    token: storage.getItem('token'),
-                })
-            })
-            .then(_response => _response.json())
-            .then(_data => {
-                console.log(111111);
-                
-                console.log(_data);
-            })
-            .catch(e => {
-                console.log('error : ',e);
-            });
-
-
-            return;
-        }
-
-        callApi('/api/get_jwt', {
+        fetch('/api/auth', {
             headers : {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
@@ -88,17 +33,16 @@ class App extends React.Component{
         })
         .then(_response => _response.json())
         .then(_data => {
-            if (_data.token) {
-                storage.setItem('token', _data.token);
-            } else {
+            console.log(_data)
+            if (_data.status !== 200) {
                 window.location = `/login/?r=${window.location.pathname + window.location.search}`
+            } else {
+                this.props.setUser(_data);
             }
         })
         .catch(e => {
             console.log('error : ',e);
         });
-
-        
     }
 
     render() {
@@ -163,4 +107,8 @@ class App extends React.Component{
     }
 }
 
-export default App
+const mapDispatchToProps = (dispatch) => {
+    return bindActionCreators({setUser}, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(App);

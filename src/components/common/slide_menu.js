@@ -11,6 +11,7 @@ class SideMenu extends React.Component{
     }
 
     handleMenu(e, _name, _korName) {
+        console.log(this.props.userInfo);
         this.props.onChangeMenu(_name, _korName);
     }
     
@@ -20,6 +21,8 @@ class SideMenu extends React.Component{
                 publicPath = _publicPath.replace(/\/$/, '');
             
             resultList = _renderData.map((data, index) => {
+                console.log(this.props.currentMenu);
+                console.log(data.name);
                 return (
                     <li
                         key={data.toString() + index}
@@ -54,6 +57,9 @@ class SideMenu extends React.Component{
                 <ul className="list-unstyled components">
                     {renderList(this.props.listMap, '/')}
                 </ul>
+                {this.props.user ? this.props.user.name : (
+                    <div>로그인을 해주세요.</div>
+                )}
             </nav>
         )
     }
@@ -61,6 +67,7 @@ class SideMenu extends React.Component{
 
 const mapStateToProps = state => {
     return {
+        user: state.user,
         currentMenu: state.menu.currentMenu,
         listMap: state.menu.listMap
     };

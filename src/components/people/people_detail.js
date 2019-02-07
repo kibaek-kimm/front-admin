@@ -128,15 +128,14 @@ class PeopleDetail extends Component {
         }, 500);
 
         setTimeout(() => {
-
-            callApi(`/api/people/${this.state.jsonData.id}`, options)
+            fetch(`/api/people/${this.state.jsonData.id}`, options)
             .then(_response => _response.json())
             .then(_data => {
                 if (_data.error) {
                     console.log(_data.message);
                     console.log(_data);
                     if (_data.status == 403) {
-                        window.location = `/login/?r=${window.location.pathname + window.location.search}`    
+                        window.location = `/login/?r=${window.location.pathname + window.location.search}`
                     }
                 } else {
                     window.history.back();
@@ -158,43 +157,43 @@ class PeopleDetail extends Component {
                 )
             } else {
                 return (
-                    <form 
-                        className="border border-light p-4" 
+                    <form
+                        className="border border-light p-4"
                         action="javascript:void(0)"
                         onSubmit={this.handleSubmit}
                     >
                         <h3>피플펀드사람들 관리</h3>
                         <div className="form-group">
-                            <label className="col-md-2 control-label" htmlFor="article_name">이름</label>  
+                            <label className="col-md-2 control-label" htmlFor="article_name">이름</label>
                             <input id="article_name" name="article_name" type="text" placeholder="Name" className="form-control input-md col-md-4" value={this.state.jsonData.name} onChange={this.handleInputName}/>
-                            <label className="col-md-2 control-label">ID</label>  
+                            <label className="col-md-2 control-label">ID</label>
                             <div className="col-md-4">{this.state.jsonData.id}</div>
                         </div>
                         <div className="form-group">
-                            <label className="col-md-2 control-label" htmlFor="article_title">생성날짜</label>  
+                            <label className="col-md-2 control-label" htmlFor="article_title">생성날짜</label>
                             <div className="col-md-2">{this.state.jsonData.create_datetime ? new Date(this.state.jsonData.create_datetime).generateDate() : '-'}</div>
-                            <label className="col-md-2 control-label" htmlFor="article_title">마지막 수정날짜</label>  
+                            <label className="col-md-2 control-label" htmlFor="article_title">마지막 수정날짜</label>
                             <div className="col-md-2">{this.state.jsonData.modified_datetime ? new Date(this.state.jsonData.modified_datetime).generateDate() : '-'}</div>
                         </div>
                         <div className="form-group">
-                            <label className="col-md-2 control-label" htmlFor="article_position">포지션</label>  
+                            <label className="col-md-2 control-label" htmlFor="article_position">포지션</label>
                             <div className="col-md-4">
                                 <input id="article_position" name="article_position" type="text" placeholder="Position" className="form-control input-md" value={this.state.jsonData.position} onChange={this.handleInputPosition}/>
                             </div>
-                            <label className="col-md-2 control-label" htmlFor="article_part">파트</label>  
+                            <label className="col-md-2 control-label" htmlFor="article_part">파트</label>
                             <div className="col-md-4">
                                 <input id="article_part" name="article_part" type="text" placeholder="Part" className="form-control input-md" value={this.state.jsonData.part} onChange={this.handleInputPart}/>
                             </div>
                         </div>
                         <div className="form-group">
-                            <label className="col-md-2 control-label" htmlFor="article_title">제목</label>  
+                            <label className="col-md-2 control-label" htmlFor="article_title">제목</label>
                             <div className="col-md-10">
                                 <input id="article_title" name="article_title" type="text" placeholder="글 제목" className="form-control input-md" value={this.state.jsonData.title} onChange={this.handleInputTitle}/>
                             </div>
                         </div>
 
                         <div className="form-group">
-                            <label className="col-md-2 control-label" htmlFor="article_desc">설명</label>  
+                            <label className="col-md-2 control-label" htmlFor="article_desc">설명</label>
                             <div className="col-md-10">
                                 <textarea className="form-control" height="200" rows="5" id="article_desc" name="article_desc" value={this.state.jsonData.desc} onChange={this.handleInputDesc}></textarea>
                             </div>
