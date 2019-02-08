@@ -65,7 +65,10 @@ class SideMenu extends React.Component{
                     {renderList(this.props.listMap, '/')}
                 </ul>
                 {this.props.user ? this.props.user.name : (
-                    <div>로그인을 해주세요.</div>
+                    <div className="user-box">
+                        <p>로그인을 해주세요.</p>
+                        <a className="btn btn-primary" href="/auth/google">로그인</a>
+                    </div>
                 )}
             </nav>
         )

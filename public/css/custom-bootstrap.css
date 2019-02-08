@@ -417,6 +417,22 @@ ul.test1 a {
     width: 200px;
 }
 
+#sidebar .user-box{
+    padding: 0 30px;
+}
+
+#sidebar .user-box > p{
+    color: #fff;
+    font: 500 14px/14px 'YoonGothicPro';
+    text-align: center;
+}
+
+#sidebar .user-box > .btn-primary{
+    width: 100%;
+    background: #fff;
+    color: #47748b;
+}
+
 @keyframes dot-3-move {
     20% {transform: scale(1)}
     45% {transform: translateY(-18px) scale(.45)}
