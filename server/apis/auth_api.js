@@ -4,6 +4,23 @@ const session = require('express-session');
 const jwtUtil = require('../jwt');
 var redirectUrl = '/';
 
+/**
+ * 로그인 직전 페이지로 다시 redirect 할수 있도록 처리
+ * @param {*} req 
+ * @param {*} res 
+ * @param {*} next 
+ */
+const setRedirect = (req, res, next) => {
+    if (req.query.r) {
+        redirectUrl = req.query.r;
+    } else {
+        redirectUrl = '/';
+    }
+    console.log('setRedirect 미들웨어');
+    console.log(redirectUrl);
+    next();
+};
+
 passport.serializeUser(function(user, done) {
     console.log('\x1b[32m%s\x1b[0m', '[[[[passport.serializeUser]]]] ');
     console.log('\n');
@@ -41,7 +58,7 @@ module.exports = function(app){
     app.use(passport.initialize());
     app.use(passport.session());
 
-    app.get('/auth/google', passport.authenticate('google', {
+    app.get('/auth/google', setRedirect, passport.authenticate('google', {
         scope: ['profile', 'email'],
         hostedDomain: 'peoplefund.co.kr'
     }));
@@ -78,7 +95,7 @@ module.exports = function(app){
         }
     });
 
-    app.get('/api/logout', function(req, res) {
+    app.get('/api/logout', setRedirect, function(req, res) {
         var sess = req.session;
         if (
             sess.passport
@@ -101,14 +118,14 @@ module.exports = function(app){
         }
     });
 
-    app.get('/login', function(req, res){
-        console.log(req.session);
-        if (req.query.r) {
-            redirectUrl = req.query.r;
-        }
+    // app.get('/login', function(req, res){
+    //     console.log(req.session);
+    //     if (req.query.r) {
+    //         redirectUrl = req.query.r;
+    //     }
         
-    	res.render('login');
-    });
+    // 	res.render('login');
+    // });
 
     app.get('/success', function(req, res){
         console.log('\x1b[32m%s\x1b[0m', '[[[[ /success]]]]');

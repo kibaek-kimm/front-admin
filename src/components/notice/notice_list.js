@@ -18,7 +18,6 @@ class NoticeList extends React.Component{
         const listOffset = (currentPage - 1) * listLimit; 
 
         this.state = {
-            isLoading: true,
             jsonData: null,
             currentPage: currentPage,
             listLimit: listLimit,
@@ -28,7 +27,7 @@ class NoticeList extends React.Component{
         this.handleChangePage = this.handleChangePage.bind(this);
     }
     
-    componentWillMount() {
+    componentDidMount() {
         this.props.changeLoadingStatus(true);
         this.getArticle();
     }
@@ -52,8 +51,7 @@ class NoticeList extends React.Component{
             console.log('data : ',_data);
             this.setState({
                 jsonData: _data.list,
-                totalLength: _data.total_length,
-                isLoading: false
+                totalLength: _data.total_length
             });
             this.props.changeLoadingStatus(false);
         })
@@ -100,8 +98,8 @@ class NoticeList extends React.Component{
                                             <td>
                                                 <Link to={`/board/notice/${obj.id}`}>{obj.title}</Link>
                                             </td>
-                                            <td style={{fontSize: '13px'}}>{obj.create_datetime ? new Date(obj.create_datetime).generateDate() : '-'}</td>
-                                            <td style={{fontSize: '13px'}}>{obj.modified_datetime ? new Date(obj.modified_datetime).generateDate() : '-'}</td>
+                                            <td>{obj.create_datetime ? new Date(obj.create_datetime).generateDate() : '-'}</td>
+                                            <td>{obj.modified_datetime ? new Date(obj.modified_datetime).generateDate() : '-'}</td>
                                         </tr>
                                     )
                                 })}
@@ -122,7 +120,6 @@ class NoticeList extends React.Component{
 
         return (
             <React.Fragment>
-                <h2>{this.props.title}</h2>
                 {renderContent()}
             </React.Fragment>
         )

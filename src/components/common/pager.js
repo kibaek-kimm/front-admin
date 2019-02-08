@@ -10,6 +10,7 @@ class Pager extends Component {
             viewSize
             limitPageView
             lastPage
+            pageQueryKey
         */
         super(props);
 
@@ -39,7 +40,7 @@ class Pager extends Component {
             for(let i = 1; i <= this.state.pageLength; i++) {
                 pageArray.push((
                     <li className={this.props.currentPage == i ? 'page-item active' : 'page-item'} onClick={this.handlePage} data-page={i} key={'key-pg-' + i}>
-                        <Link className="page-link" to={this.props.publicPath + i}>{i}</Link>
+                        <Link className="page-link" to={`${this.props.publicPath}?${this.props.pageQueryKey}=${i}`}>{i}</Link>
                     </li>
                 ));
             }

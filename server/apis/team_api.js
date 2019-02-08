@@ -14,7 +14,7 @@ module.exports = function(app){
      *      - create_datetime, modified_datetime
      *      - 추후 프론트 공지사항 타입 + 날짜 기준으로 정렬
      */
-    app.get(`/api/people`, function(req, res, next){
+    app.get(`/api/team`, function(req, res, next){
         var offset = req.query.offset ? req.query.offset : 0;
         var limit = req.query.limit ? req.query.limit : 10;
 
@@ -43,7 +43,7 @@ module.exports = function(app){
      * TODO: 
      *      - content 문자열로 수정
      */
-    app.get(`/api/people/:id`, function(req, res, next){
+    app.get(`/api/team/:id`, function(req, res, next){
         if (!peopleData) {
             peopleData = utils.getJson(utils.APP_PATH + '/testfile/team-list.json');
         }
@@ -60,7 +60,7 @@ module.exports = function(app){
         }
     });
 
-    app.put(`/api/people/:id`, (req, res) => {
+    app.put(`/api/team/:id`, (req, res) => {
         var resultData = utils.getDataByKey(peopleData.data.list, 'id', req.params.id);
 
         if (resultData) {

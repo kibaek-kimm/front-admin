@@ -8,7 +8,6 @@ class FaqList extends React.Component{
     render() {
         return (
             <React.Fragment>
-                <h2>{this.props.title}</h2>
                 <div>준비중입니다.</div>
             </React.Fragment>
         )

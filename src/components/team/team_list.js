@@ -8,7 +8,7 @@ import { changeLoadingStatus } from '../../actions'
 import Pager from '../common/pager'
 
 
-class PeopleList extends React.Component{
+class TeamList extends React.Component{
     constructor(props) {
         super(props);
 
@@ -34,7 +34,7 @@ class PeopleList extends React.Component{
     }
 
     getArticle() {
-        fetch(`/api/people?limit=${this.state.listLimit}&offset=${this.state.listOffset}`, {
+        fetch(`/api/team?limit=${this.state.listLimit}&offset=${this.state.listOffset}`, {
             method: 'GET',
             headers : {
                 'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ class PeopleList extends React.Component{
                                             <td>{obj.name}</td>
                                             <td>{obj.id}</td>
                                             <td>
-                                                <Link to={`/board/people/${obj.id}`}>{obj.title}</Link>
+                                                <Link to={`/board/team/${obj.id}`}>{obj.title}</Link>
                                             </td>
                                             <td style={{fontSize: '13px'}}>{obj.create_datetime ? new Date(obj.create_datetime).generateDate() : '-'}</td>
                                             <td style={{fontSize: '13px'}}>{obj.modified_datetime ? new Date(obj.modified_datetime).generateDate() : '-'}</td>
@@ -105,7 +105,7 @@ class PeopleList extends React.Component{
                         </table>
     
                         <Pager 
-                            publicPath="/board/people/?page="
+                            publicPath="/board/team/?page="
                             totalLength={this.state.totalLength}
                             viewSize={15}
                             currentPage={this.state.currentPage}
@@ -118,7 +118,6 @@ class PeopleList extends React.Component{
 
         return (
             <React.Fragment>
-                <h2>{this.props.title}</h2>
                 {renderContent()}
             </React.Fragment>
         )
@@ -129,4 +128,4 @@ const mapDispatchToProps = (dispatch) => {
     return bindActionCreators({changeLoadingStatus}, dispatch);
 }
 
-export default connect(null, mapDispatchToProps)(PeopleList);
+export default connect(null, mapDispatchToProps)(TeamList);

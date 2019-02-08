@@ -9,7 +9,7 @@ var jwtUtil = require('../jwt');
 var fileApi     = require('./file_api');
 var noticeApi   = require('./notice_api');
 var recruitApi  = require('./recruit_api');
-var peopleApi   = require('./people_api');
+var teamApi   = require('./team_api');
 var authApi     = require('./auth_api');
 
 module.exports = function(app){
@@ -37,7 +37,7 @@ module.exports = function(app){
     fileApi(app);
     noticeApi(app);
     recruitApi(app);
-    peopleApi(app);
+    teamApi(app);
     authApi(app);
 
     app.get('/api/s3test', (req, res) => {

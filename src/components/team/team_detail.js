@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { changeLoadingStatus } from '../../actions'
 
-class PeopleDetail extends Component {
+class TeamDetail extends Component {
     constructor(props) {
         super(props);
 
@@ -20,7 +20,7 @@ class PeopleDetail extends Component {
 
     componentDidMount() {
         if (this.props.match.params && this.props.match.params.id) {
-            fetch(`/api/people/${this.props.match.params.id}`, {
+            fetch(`/api/team/${this.props.match.params.id}`, {
                 method: 'GET',
                 headers : {
                     'Content-Type': 'application/json',
@@ -128,7 +128,7 @@ class PeopleDetail extends Component {
         }, 500);
 
         setTimeout(() => {
-            fetch(`/api/people/${this.state.jsonData.id}`, options)
+            fetch(`/api/team/${this.state.jsonData.id}`, options)
             .then(_response => _response.json())
             .then(_data => {
                 if (_data.error) {
@@ -221,4 +221,4 @@ const mapDispatchToProps = (dispatch) => {
     return bindActionCreators({changeLoadingStatus}, dispatch);
 }
 
-export default connect(null, mapDispatchToProps)(PeopleDetail);
+export default connect(null, mapDispatchToProps)(TeamDetail);

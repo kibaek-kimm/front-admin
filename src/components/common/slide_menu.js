@@ -1,83 +1,68 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { changeCurrentMenu, setUser } from '../../actions'
-import { Link } from 'react-router-dom';
+import { NavLink, withRouter } from 'react-router-dom';
+import axios from 'axios';
+
+import { changeCurrentMenu } from '../../actions'
 
 class SideMenu extends React.Component{
     constructor(props) {
         super(props);
 
         this.handleMenu = this.handleMenu.bind(this);
-    }
-
-    componentDidMount() {
-        this.props.setUser();
-        setTimeout(() => {
-            console.log(this.props);
-        }, 2000);
+        this.state = {
+            currentMenu: ''
+        };
     }
 
     handleMenu(e, _name, _korName) {
-        console.log(this.props.userInfo);
-        this.props.onChangeMenu(_name, _korName);
+        // this.props.onChangeMenu(_name, _korName);
+        // this.setState({
+        //     currentMenu: _name
+        // });
+
+        console.log('%c SideMenu Component -> handleMenu : ', 'color: #fff;background:blue;');
+        console.log('parameter "_name" : ',_name);
+        console.log('state.currentMenu : ',this.state.currentMenu);
+        console.log('%c =============', 'color: #fff;background:blue;');
     }
     
     render() {
-        const renderList = (_renderData, _publicPath) => {
-            let resultList = [],
-                publicPath = _publicPath.replace(/\/$/, '');
-            
-            resultList = _renderData.map((data, index) => {
-                console.log(this.props.currentMenu);
-                console.log(data.name);
+        const renderList = (_renderData) => {
+            return _renderData.map((data, index) => {
                 return (
                     <li
                         key={data.toString() + index}
-                        className={this.props.currentMenu === data.name ? 'active' : ''}
-                        onClick={e => this.handleMenu(e, data.name, data.korName)}
                     >
-                        <Link
-                            to={data.subMenu ? 'javascript:;' : `${publicPath}/${data.name}`}
-                            className={data.subMenu ? 'dropdown-toggle' : ''}
-                            data-toggle={data.subMenu ? 'collapse' : ''}
+                        <NavLink
+                            exact={true}
+                            to={`${data.link}`}
+                            activeClassName="active"
                         >
+                            <i className={data.iconType ? data.iconType : 'pe-7s-help1'}></i>
                             {data.korName}
-                        </Link>
-                        {data.subMenu ? (
-                            <ul className="collapse list-unstyled show">
-                                {renderList(data.subMenu, `${publicPath}/${data.name}`)}
-                            </ul>
-                        ) : ''}
+                        </NavLink>
                     </li>
                 )
             });
-            
-            return resultList;
         };
         
         return (
             // onClick={() => this.props.onChangeMenu('heading')
-            <nav id="sidebar">
-                <div className="sidebar-header">
-                    <h3><a href="/">피플펀드<br/>프론트어드민</a></h3>
+            <div className="sidebar" data-image="https://picsum.photos/g/260/800/?random" data-color="darkgray">
+                <div className="sidebar-wrapper">
+                    <div className="logo">피플펀드<br/>프론트어드민</div>
+                    <ul className="nav">
+                        {renderList(this.props.listMap, '/')}
+                    </ul>
                 </div>
-                <ul className="list-unstyled components">
-                    {renderList(this.props.listMap, '/')}
-                </ul>
-                {this.props.user ? this.props.user.name : (
-                    <div className="user-box">
-                        <p>로그인을 해주세요.</p>
-                        <a className="btn btn-primary" href="/auth/google">로그인</a>
-                    </div>
-                )}
-            </nav>
+            </div>
         )
     }
 }
 
 const mapStateToProps = state => {
     return {
-        user: state.user,
         currentMenu: state.menu.currentMenu,
         listMap: state.menu.listMap
     };
@@ -85,9 +70,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        onChangeMenu: (currentMenu, menuTitle) => dispatch(changeCurrentMenu(currentMenu, menuTitle)),
-        setUser: () => dispatch(setUser())
+        onChangeMenu: (currentMenu, menuTitle) => dispatch(changeCurrentMenu(currentMenu, menuTitle))
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(SideMenu);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(SideMenu));
